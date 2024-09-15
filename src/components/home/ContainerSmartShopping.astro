@@ -3,12 +3,11 @@ import { Image } from "astro:assets";
 import scLounge from "../../assets/phone1.png"; // Make sure to add your image to this path
 import scChekout from "../../assets/phone2.png"; // Make sure to add your image to this path
 import scRegister from "../../assets/phone3.png"; // Make sure to add your image to this path
-import Heading from "../Heading.astro";
 import Pile from "../Pile.astro";
 ---
 
 <section
-  class="mt-[0px] smart-image-container gap-4 bg-[#0E69BD] w-full mx-auto h-[80vh] flex hover:cursor-pointer"
+  class="mt-[0px] group gap-4 bg-[#0E69BD] w-full mx-auto h-[80vh] flex hover:cursor-pointer"
 >
   <div class="w-3/5 relative">
     <div
@@ -21,17 +20,17 @@ import Pile from "../Pile.astro";
     <Image
       src={scChekout}
       alt="Savicore smart-image-co"
-      class="smart-image-co transition-transform duration-3000 ease-in-out absolute top-1/2 transform -translate-y-[40%] h-[50%] w-auto left-1/2 -translate-x-[calc(50%_+_180px)]"
+      class="group-hover:scale-110 transition-all duration-300 ease-in-out absolute top-1/2 transform -translate-y-[40%] h-[50%] w-auto left-1/2 -translate-x-[calc(50%_+_180px)]"
     />
     <Image
     src={scRegister}
     alt="Savicore smart-image-reg"
-    class="smart-image-reg transition-transform duration-3000 ease-in-out absolute top-1/2 transform -translate-y-[40%] h-[50%] w-auto left-1/2 -translate-x-[calc(50%_-_180px)]"
+    class=" group-hover:scale-110 transition-all duration-300 ease-in-out absolute top-1/2 transform -translate-y-[40%] h-[50%] w-auto left-1/2 -translate-x-[calc(50%_-_180px)]"
     />
     <Image
       src={scLounge}
       alt="Savicore smart-image-lounge"
-      class="smart-image-lounge transition-transform duration-3000 ease-in-out absolute top-1/2 transform -translate-y-[50%] h-[50%] w-auto left-1/2 -translate-x-[50%]"
+      class="group-hover:scale-110 transition-all duration-300  ease-in-out absolute top-1/2 transform -translate-y-[50%] h-[50%] w-auto left-1/2 -translate-x-[50%]"
     />
   </div>
   <div
@@ -57,26 +56,7 @@ import Pile from "../Pile.astro";
 </section>
 
 <style>
-  .smart-image-container:hover .smart-image-lounge {
-
-    transform: scale(1.1);
-    transition: all 1s ease;
-  }
-
-  .smart-image-container:hover .smart-image-co {
-
-    transform: scale(1.1);
-    transition: all 1.5s ease;
-  }
-
-  .smart-image-container:hover .smart-image-reg {
-
-    transform: scale(1.1);
-    transition: all 1.3s ease;
-  }
-
-  
-  .smart-image-container {
+   .smart-image-container {
     overflow: hidden;
   }
 </style>
