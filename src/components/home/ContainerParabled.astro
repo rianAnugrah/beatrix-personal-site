@@ -1,0 +1,91 @@
+---
+import { Image } from "astro:assets";
+import bwProduct from "../../assets/parabled-plan.png"; // Make sure to add your image to this path
+import bwHome from "../../assets/parabled-homepage.png"; // Make sure to add your image to this path/ Make sure to add your image to this path
+import Heading from "../Heading.astro";
+import Pile from "../Pile.astro";
+---
+
+<section
+  class="mt-[0px] image-container gap-4 bg-[#C23A3136] w-full mx-auto h-[80vh] flex hover:cursor-pointer"
+>
+<div
+class="image-container w-2/5 relative flex flex-col items-start px-[104px] justify-center gap-4"
+>
+<div class="flex gap-4">
+  <Pile text="Web" />
+  <Pile text="UX Writing" />
+</div>
+<div class=" text-left">
+  <Heading text="Parabled"  />
+</div>
+<p style="font-family: 'Playfair Display', serif;" class="text-[28px] leading-[38px] font-bold">
+    First version of Savicore
+</p>
+
+<p class="italic w-full text-xl text-wrap">
+    Revamp the entire learning platform website to attract users and encourage them to register for our coaching plans.
+</p>
+
+</div>
+  <div class="w-3/5 relative">
+    <div
+      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2/3 h-2/3"
+    >
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="50" fill="#5776F7"></circle>
+      </svg>
+    </div>
+    <Image
+      src={bwHome}
+      alt="Savicore image-co"
+      class="image-co transition-transform duration-3000 ease-in-out absolute -bottom-0 right-[calc(50%_-_100px)] h-[80%] w-auto"
+    />
+    <Image
+      src={bwProduct}
+      alt="Savicore image-reg"
+      class="image-lounge transition-transform duration-3000 ease-in-out absolute  bottom-5 right-0 h-[40%] w-auto"
+    />
+  
+  </div>
+ 
+</section>
+
+    <style>
+      .image-container:hover .image-lounge {
+        /* animation: moveUpDown 3s ease-in-out 1; */
+        transform: translateY(-20px);
+        transform: scale(1.1);
+        transition: all 3s ease;
+      }
+
+      .image-container:hover .image-co {
+        /* animation: moveUpDown 4s ease-in-out infinite; */
+        transform: translateY(-20px);
+        transform: scale(1.1);
+        transition: all 4s ease;
+      }
+
+      .image-container:hover .image-reg {
+        /* animation: moveUpDown 5s ease-in-out infinite; */
+        transform: translateY(-20px);
+        transform: scale(1.1);
+        transition: all 2s ease;
+      }
+
+      @keyframes moveUpDown {
+        0%,
+        100% {
+          transform: translateY(0);
+          transform: scale(1);
+        }
+        50% {
+          transform: translateY(-20px);
+          transform: scale(1.1);
+        }
+      }
+
+      .image-container {
+        overflow: hidden;
+      }
+    </style>

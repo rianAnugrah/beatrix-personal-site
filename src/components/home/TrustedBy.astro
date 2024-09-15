@@ -1,0 +1,40 @@
+---
+import Heading from "../Heading.astro";
+import { Image } from "astro:assets";
+import lucent from "../../assets/Lucent Designs.png";
+import savicore from "../../assets/Savicore.png";
+import presently from "../../assets/Presently.png";
+
+import Bit from "../../assets/Icon - Bit Project.png";
+import GL from "../../assets/Icon - Guardian Life.png";
+import Pit from "../../assets/Icon - PitchTeen.png";
+import ImaCre from "../../assets/Icon - Imagine Creative.png";
+import Zak from "../../assets/Icon - ZAKKI.png";
+---
+
+<style>
+
+    .list:hover .item:not(:hover){
+        filter : grayscale(1) blur(0px)
+    }
+</style>
+
+<section class="my-6 px-[124px] list">
+  <Heading text="Trusted by" />
+  <p class="text-center">
+    Through my collaborations with diverse teams, startups, and companies, I
+    have successfully driven sales and performance growth.
+  </p>
+  <div class="flex w-full justify-center items-center gap-10 my-6 ">
+    <Image src={savicore} alt="Savicore image" class="item transition-all ease-out duration-300 h-[102px] object-contain" />
+    <Image src={presently} alt="Savicore image" class="item transition-all ease-out duration-300 h-[102px] object-contain" />
+    <Image src={lucent} alt="Savicore image" class="item transition-all ease-out duration-300 h-[54px] object-contain" />
+  </div>
+  <div class="flex w-full justify-center items-center gap-10 my-6">
+    <Image src={Bit} alt="Savicore image" class="item transition-all ease-out duration-300 h-[82px] object-contain" />
+    <Image src={Pit} alt="Savicore image" class="item transition-all ease-out duration-300 h-[102px]  object-contain" />
+    <Image src={GL} alt="Savicore image" class="item transition-all ease-out duration-300 h-[102px]  object-contain" />
+    <Image src={ImaCre} alt="Savicore image" class="item transition-all ease-out duration-300 h-[102px]  object-contain" />
+    <Image src={Zak} alt="Savicore image" class="item transition-all ease-out duration-300 h-[102px]  object-contain" />
+  </div>
+</section>

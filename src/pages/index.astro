@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/home/Hero.astro';
+import Footer from '../components/Footer.astro';
+import ContainerSavicore from '../components/home/ContainerSavicore.astro';
+import TrustedBy from '../components/home/TrustedBy.astro';
+import WhatPeopleSay from '../components/home/WhatPeopleSay.astro';
+import ContainerBrightWaste from '../components/home/ContainerBrightWaste.astro';
+import ContainerSmartShopping from '../components/home/ContainerSmartShopping.astro';
+import ContainerParabled from '../components/home/ContainerParabled.astro';
+---
+
+<Layout title="Hey, I'm Beatrix!">
+    <Navbar />
+    <main>
+        <Hero />
+        <ContainerSavicore />
+        <ContainerBrightWaste />
+        <ContainerSmartShopping />
+        <ContainerParabled />
+        <TrustedBy/>
+        <WhatPeopleSay />
+
+    </main>
+    <Footer />
+</Layout>

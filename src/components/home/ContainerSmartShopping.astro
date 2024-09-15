@@ -1,0 +1,82 @@
+---
+import { Image } from "astro:assets";
+import scLounge from "../../assets/phone1.png"; // Make sure to add your image to this path
+import scChekout from "../../assets/phone2.png"; // Make sure to add your image to this path
+import scRegister from "../../assets/phone3.png"; // Make sure to add your image to this path
+import Heading from "../Heading.astro";
+import Pile from "../Pile.astro";
+---
+
+<section
+  class="mt-[0px] smart-image-container gap-4 bg-[#0E69BD] w-full mx-auto h-[80vh] flex hover:cursor-pointer"
+>
+  <div class="w-3/5 relative">
+    <div
+      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2/3 h-2/3"
+    >
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="50" fill="#E8B87B"></circle>
+      </svg>
+    </div>
+    <Image
+      src={scChekout}
+      alt="Savicore smart-image-co"
+      class="smart-image-co transition-transform duration-3000 ease-in-out absolute top-1/2 transform -translate-y-[40%] h-[50%] w-auto left-1/2 -translate-x-[calc(50%_+_180px)]"
+    />
+    <Image
+    src={scRegister}
+    alt="Savicore smart-image-reg"
+    class="smart-image-reg transition-transform duration-3000 ease-in-out absolute top-1/2 transform -translate-y-[40%] h-[50%] w-auto left-1/2 -translate-x-[calc(50%_-_180px)]"
+    />
+    <Image
+      src={scLounge}
+      alt="Savicore smart-image-lounge"
+      class="smart-image-lounge transition-transform duration-3000 ease-in-out absolute top-1/2 transform -translate-y-[50%] h-[50%] w-auto left-1/2 -translate-x-[50%]"
+    />
+  </div>
+  <div
+    class="smart-image-container w-2/5 relative flex flex-col items-start justify-center gap-4"
+  >
+    <div class="flex gap-4">
+      <Pile text="Mobile" />
+      <Pile text="UX Design" />
+      <Pile text="UX Writing" />
+    </div>
+    <div class="text-white text-left">
+      <h1
+        style="font-family: 'Playfair Display', serif;"
+        class="text-left w-full text-[64px] font-bold leading-[86px]"
+      >
+        Smart <br/>Shopping Cart
+      </h1>
+    </div>
+    <p class="italic w-3/4 text-xl text-white">
+        An iOS shopping app that automatically scans items in a customer's offline grocery cart, successfully increased shop revenue by 25%.
+    </p>
+  </div>
+</section>
+
+<style>
+  .smart-image-container:hover .smart-image-lounge {
+
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+
+  .smart-image-container:hover .smart-image-co {
+
+    transform: scale(1.1);
+    transition: all 1.5s ease;
+  }
+
+  .smart-image-container:hover .smart-image-reg {
+
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+  }
+
+  
+  .smart-image-container {
+    overflow: hidden;
+  }
+</style>

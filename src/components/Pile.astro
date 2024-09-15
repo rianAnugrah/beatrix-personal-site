@@ -1,0 +1,12 @@
+---
+export interface Props {
+  text: string;
+  class?: string;
+}
+
+const { text, class: className } = Astro.props;
+---
+
+<p class={" text-center bg-white px-4 h-[35px] flex items-center justify-center rounded-full px-leading-[86px] text-[#0A0614]" + className } style="font-family: 'Playfair Display', serif;">
+    {text}
+</p>
