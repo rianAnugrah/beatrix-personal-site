@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import logoImage from "../assets/Logo.png"; // Make sure to add your image to this path
 ---
 
-<nav class="bg-white flex items-center h-[167px] px-6 lg:px-20 py-6 border">
+<nav class="bg-[#FFF2EF] sm:bg-white flex items-center md:h-[167px] px-6 lg:px-20 py-6 ">
   <div class="flex justify-between h-16 items-center w-full">
     <div class="flex justify-between w-full">
       <a href="/" class="flex-shrink-0 flex items-center">
@@ -70,56 +70,30 @@ import logoImage from "../assets/Logo.png"; // Make sure to add your image to th
       </div>
     </div>
     <div class="-mr-2 flex items-center sm:hidden">
-      <button
-        type="button"
-        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-        aria-controls="mobile-menu"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Open main menu</span>
-        <svg
-          width="34"
-          height="34"
-          viewBox="0 0 34 34"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M28.3334 9.9165H5.66669M28.3334 16.9998H5.66669M28.3334 24.0832H5.66669"
-            stroke="#5B3EFF"
-            stroke-width="2.5"
-            stroke-linecap="round"></path>
-        </svg>
-      </button>
+      <div class="drawer drawer-end">
+        <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+          <!-- Page content here -->
+          <label for="my-drawer-4" class="drawer-button"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.3334 9.9165H5.66669M28.3334 16.9998H5.66669M28.3334 24.0832H5.66669" stroke="#5B3EFF" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            </label>
+        </div>
+        <div class="drawer-side z-20" style="font-family: 'Playfair Display', serif;">
+          <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+          <ul class="menu bg-[#FFF2EF] sm:bg-white text-base-content  w-full p-0 mt-[110px]">
+            <!-- Sidebar content here -->
+            <li><a href="/works/savicore" class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none">Work</a></li>
+            <li><a href="/about" class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none">About</a></li>
+            <li><a href="/my-process" class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none">My Process</a></li>
+            <li><a href="/achievement" class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none">Achievement</a></li>
+            <li><a href="https://www.linkedin.com/in/beatrixcendana/" class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none">Connect with me</a></li>
+            <li><a href="mailto:beatrixcdn@gmail.com?subject=Hello%20there" class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none">Email me</a></li>
+           
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="hidden" id="mobile-menu">
-    <div class="pt-2 pb-3 space-y-1">
-      <a
-        href="#"
-        class="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
-        >Home</a
-      >
-      <a
-        href="#"
-        class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
-        >About</a
-      >
-      <a
-        href="#"
-        class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
-        >Services</a
-      >
-      <a
-        href="#"
-        class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
-        >Contact</a
-      >
-    </div>
-  </div>
-</nav>
-
-
 
 
