@@ -3,7 +3,9 @@ import { Image } from "astro:assets";
 import logoImage from "../assets/Logo.png"; // Make sure to add your image to this path
 ---
 
-<nav class="bg-[#FFF2EF] sm:bg-white flex items-center md:h-[167px] px-6 lg:px-20 py-6 ">
+<nav
+  class="bg-[#FFF2EF] sm:bg-white flex items-center md:h-[167px] px-6 lg:px-20 py-6"
+>
   <div class="flex justify-between h-16 items-center w-full">
     <div class="flex justify-between w-full">
       <a href="/" class="flex-shrink-0 flex items-center">
@@ -74,26 +76,107 @@ import logoImage from "../assets/Logo.png"; // Make sure to add your image to th
         <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content">
           <!-- Page content here -->
-          <label for="my-drawer-4" class="drawer-button"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M28.3334 9.9165H5.66669M28.3334 16.9998H5.66669M28.3334 24.0832H5.66669" stroke="#5B3EFF" stroke-width="2.5" stroke-linecap="round"/>
+          <label for="my-drawer-4" class="drawer-button"
+            ><svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M28.3334 9.9165H5.66669M28.3334 16.9998H5.66669M28.3334 24.0832H5.66669"
+                stroke="#5B3EFF"
+                stroke-width="2.5"
+                stroke-linecap="round"></path>
             </svg>
-            </label>
+          </label>
         </div>
-        <div class="drawer-side z-20" style="font-family: 'Playfair Display', serif;">
-          <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
-          <ul class="menu bg-[#FFF2EF] sm:bg-white text-base-content  w-full p-0 mt-[110px]">
+        <div
+          class="drawer-side z-20"
+          style="font-family: 'Playfair Display', serif;"
+        >
+          <label
+            for="my-drawer-4"
+            aria-label="close sidebar"
+            class="drawer-overlay"></label>
+          <ul
+            class="menu bg-[#FFF2EF] sm:bg-white text-base-content w-full p-0"
+          >
+            <div
+              class=" p-6 py-10 flex-col justify-start items-start gap-2.5 inline-flex"
+            >
+              <div
+                class="self-stretch justify-between items-center inline-flex"
+              >
+                <a href="/" class="flex-shrink-0 flex items-center">
+                  <Image src={logoImage} alt="Logo" class="h-[37px] w-auto" />
+                </a>
+                
+                <label for="my-drawer-4" class="drawer-button"
+                ><svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28.3334 9.9165H5.66669M28.3334 16.9998H5.66669M28.3334 24.0832H5.66669"
+                    stroke="#5B3EFF"
+                    stroke-width="2.5"
+                    stroke-linecap="round"></path>
+                </svg>
+              </label>
+               
+              </div>
+            </div>
             <!-- Sidebar content here -->
-            <li><a href="/works/savicore" class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none">Work</a></li>
-            <li><a href="/about" class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none">About</a></li>
-            <li><a href="/my-process" class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none">My Process</a></li>
-            <li><a href="/achievement" class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none">Achievement</a></li>
-            <li><a href="https://www.linkedin.com/in/beatrixcendana/" class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none">Connect with me</a></li>
-            <li><a href="mailto:beatrixcdn@gmail.com?subject=Hello%20there" class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none">Email me</a></li>
-           
+            <li>
+              <a
+                href="/works/savicore"
+                class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none"
+                >Work</a
+              >
+            </li>
+            <li>
+              <a
+                href="/about"
+                class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="/my-process"
+                class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none"
+                >My Process</a
+              >
+            </li>
+            <li>
+              <a
+                href="/achievement"
+                class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none"
+                >Achievement</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/beatrixcendana/"
+                class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none"
+                >Connect with me</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:beatrixcdn@gmail.com?subject=Hello%20there"
+                class="hover:bg-[#EBDBF1] h-[59px] flex items-center justify-center px-6 py-4 rounded-none"
+                >Email me</a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-
-
+</nav>
