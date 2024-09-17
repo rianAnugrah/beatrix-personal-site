@@ -12,25 +12,19 @@ import ImaCre from "../../assets/Icon - Imagine Creative.png";
 import Zak from "../../assets/Icon - ZAKKI.png";
 ---
 
-<style>
 
-    .list:hover .item:not(:hover){
-        filter : grayscale(1) blur(0px)
-    }
-</style>
-
-<section class="my-6 px-[124px] list">
+<section class="my-6 px-[124px] list md:pt-12">
   <Heading text="Trusted by" />
   <p class="text-center">
     Through my collaborations with diverse teams, startups, and companies, I
     have successfully driven sales and performance growth.
   </p>
-  <div class="flex w-full justify-center items-center gap-10 my-6 ">
+  <div class="flex w-full flex-col xl:flex-row justify-center items-center gap-10 my-6 ">
     <Image src={savicore} alt="Savicore image" class="item transition-all ease-out duration-300 h-[102px] object-contain" />
     <Image src={presently} alt="Savicore image" class="item transition-all ease-out duration-300 h-[102px] object-contain" />
     <Image src={lucent} alt="Savicore image" class="item transition-all ease-out duration-300 h-[54px] object-contain" />
   </div>
-  <div class="flex w-full justify-center items-center gap-10 my-6">
+  <div class="xl:flex hidden w-full justify-center items-center gap-10 my-6">
     <Image src={Bit} alt="Savicore image" class="item transition-all ease-out duration-300 h-[82px] object-contain" />
     <Image src={Pit} alt="Savicore image" class="item transition-all ease-out duration-300 h-[102px]  object-contain" />
     <Image src={GL} alt="Savicore image" class="item transition-all ease-out duration-300 h-[102px]  object-contain" />

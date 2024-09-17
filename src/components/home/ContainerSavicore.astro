@@ -1,41 +1,37 @@
 ---
 import { Image } from "astro:assets";
-import scLounge from "../../assets/sc-lounge.png"; // Make sure to add your image to this path
-import scChekout from "../../assets/sc-checkout.png"; // Make sure to add your image to this path
-import scRegister from "../../assets/sc-register.png"; // Make sure to add your image to this path
+
+import scMobile from "../../assets/Container - Savicore-m.png"; // Make sure to add your image to this path
+import scDesktop from "../../assets/Container - Savicore.png"; // Make sure to add your image to this path
+import scTablet from "../../assets/Container - Savicore-t.png"; // Make sure to add your image to this path
 import Heading from "../Heading.astro";
 import Pile from "../Pile.astro";
+
+const title = "Savicore";
+const desc  = `Optimize the checkout, dashboard, and group coaching registration process to target 500 subscribers per month.`
 ---
 
-<section
-  class="mt-[64px] image-container gap-4 bg-[#4424FF] w-full mx-auto h-[80vh] flex hover:cursor-pointer"
->
-  <div class="w-3/5 relative">
-    <div
-      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 w-2/3 h-2/3"
-    >
-      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="50" fill="#EF6F86"></circle>
-      </svg>
-    </div>
-    <Image
-      src={scChekout}
-      alt="Savicore image-co"
-      class="image-co transition-transform duration-3000 ease-in-out absolute -bottom-5 w-[447px] left-[calc(50%_-_200px)]"
-    />
-    <Image
-      src={scLounge}
-      alt="Savicore image-lounge"
-      class="image-lounge transition-transform duration-3000 ease-in-out absolute -bottom-5 w-[169px] left-[calc(50%_-_300px)]"
-    />
-    <Image
-      src={scRegister}
-      alt="Savicore image-reg"
-      class="image-reg transition-transform duration-3000 ease-in-out absolute -bottom-5 w-[314px] left-[calc(50%_+_32px)]"
-    />
-  </div>
+<section class="relative flex flex-col w-full h-full group">
+  <Image
+    src={scDesktop}
+    alt="Savicore image-co"
+    class="hidden xl:block w-full h-full z-10 group-hover:scale-110 transition-all duration-500 ease-out"
+  />
+
+  <Image
+    src={scTablet}
+    alt="Savicore image-co"
+    class="hidden md:block xl:hidden w-full h-full"
+  />
+
+  <Image
+    src={scMobile}
+    alt="Savicore image-co"
+    class="block md:hidden w-full h-full"
+  />
+
   <div
-    class="image-container w-2/5 relative flex flex-col items-start justify-center gap-4"
+    class="hidden absolute w-2/5 right-0 top-1/2 -translate-y-1/2 md:flex flex-col items-start justify-center gap-4"
   >
     <div class="flex gap-4">
       <Pile text="Web" />
@@ -44,51 +40,26 @@ import Pile from "../Pile.astro";
       <Pile text="UX Writing" />
     </div>
     <div class="text-white">
-      <Heading text="Savicore"  />
+      <Heading text={title} />
     </div>
-    <p class="italic w-1/2 text-xl text-white">
-      Optimize the checkout, dashboard, and group coaching registration
-      process to target 500 subscribers per month.
+    <p class="italic w-full text-xl text-white pr-[20%]">
+      {desc}
     </p>
-
   </div>
+
+  <div
+  class="md:hidden flex flex-col items-start p-[6%] gap-2 mb-[15%]"
+>
+  <div class="flex gap-4 text-[#5B3EFF] font-playfair">
+    Web | Mobile | UX Design | UX Writing
+  </div>
+  <div class="text-left">
+    <Heading text={title} />
+  </div>
+  <p class="italic w-full text-xl text-left">
+    {desc}
+  </p>
+</div>
+
+
 </section>
-
-    <style>
-      .image-container:hover .image-lounge {
-        /* animation: moveUpDown 3s ease-in-out 1; */
-        transform: translateY(-20px);
-        transform: scale(1.1);
-        transition: all 1s ease;
-      }
-
-      .image-container:hover .image-co {
-        /* animation: moveUpDown 4s ease-in-out infinite; */
-        transform: translateY(-20px);
-        transform: scale(1.1);
-        transition: all 1.5s ease;
-      }
-
-      .image-container:hover .image-reg {
-        /* animation: moveUpDown 5s ease-in-out infinite; */
-        transform: translateY(-20px);
-        transform: scale(1.1);
-        transition: all 1.3s ease;
-      }
-
-      @keyframes moveUpDown {
-        0%,
-        100% {
-          transform: translateY(0);
-          transform: scale(1);
-        }
-        50% {
-          transform: translateY(-20px);
-          transform: scale(1.1);
-        }
-      }
-
-      .image-container {
-        overflow: hidden;
-      }
-    </style>

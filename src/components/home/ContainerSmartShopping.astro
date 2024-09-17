@@ -1,62 +1,65 @@
 ---
+const title = "Smart Shopping Cart";
+const desc  = `An iOS shopping app that automatically scans items in a customer's offline grocery cart, successfully increased shop revenue by 25%.`
+
+
 import { Image } from "astro:assets";
-import scLounge from "../../assets/phone1.png"; // Make sure to add your image to this path
-import scChekout from "../../assets/phone2.png"; // Make sure to add your image to this path
-import scRegister from "../../assets/phone3.png"; // Make sure to add your image to this path
+import scMobile from "../../assets/Container - Cart-m.png"; // Make sure to add your image to this path
+import scDesktop from "../../assets/Container - Grocery.png"; // Make sure to add your image to this path
+import scTablet from "../../assets/Container - Cart-t.png";
 import Pile from "../Pile.astro";
+import Heading from "../Heading.astro";
 ---
 
-<section
-  class="mt-[0px] group gap-4 bg-[#0E69BD] w-full mx-auto h-[80vh] flex hover:cursor-pointer"
->
-  <div class="w-3/5 relative">
-    <div
-      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2/3 h-2/3"
-    >
-      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="50" fill="#E8B87B"></circle>
-      </svg>
-    </div>
-    <Image
-      src={scChekout}
-      alt="Savicore smart-image-co"
-      class="group-hover:scale-110 transition-all duration-300 ease-in-out absolute top-1/2 transform -translate-y-[40%] h-[50%] w-auto left-1/2 -translate-x-[calc(50%_+_180px)]"
-    />
-    <Image
-    src={scRegister}
-    alt="Savicore smart-image-reg"
-    class=" group-hover:scale-110 transition-all duration-300 ease-in-out absolute top-1/2 transform -translate-y-[40%] h-[50%] w-auto left-1/2 -translate-x-[calc(50%_-_180px)]"
-    />
-    <Image
-      src={scLounge}
-      alt="Savicore smart-image-lounge"
-      class="group-hover:scale-110 transition-all duration-300  ease-in-out absolute top-1/2 transform -translate-y-[50%] h-[50%] w-auto left-1/2 -translate-x-[50%]"
-    />
-  </div>
+<section class="relative flex flex-col w-full h-full group">
+  <Image
+    src={scDesktop}
+    alt="Savicore image-co"
+    class="hidden xl:block w-full h-full z-10 group-hover:scale-110 transition-all duration-500 ease-out"
+  />
+
+  <Image
+    src={scTablet}
+    alt="Savicore image-co"
+    class="hidden md:block xl:hidden w-full h-full"
+  />
+
+  <Image
+    src={scMobile}
+    alt="Savicore image-co"
+    class="block md:hidden w-full h-full"
+  />
+
   <div
-    class="smart-image-container w-2/5 relative flex flex-col items-start justify-center gap-4"
+    class="hidden absolute w-2/5 right-0 top-1/2 -translate-y-1/2 md:flex flex-col items-start justify-center gap-4"
   >
     <div class="flex gap-4">
+      
       <Pile text="Mobile" />
       <Pile text="UX Design" />
       <Pile text="UX Writing" />
     </div>
     <div class="text-white text-left">
-      <h1
-        style="font-family: 'Playfair Display', serif;"
-        class="text-left w-full text-[64px] font-bold leading-[86px]"
-      >
-        Smart <br/>Shopping Cart
-      </h1>
+      <Heading text={title} />
     </div>
-    <p class="italic w-3/4 text-xl text-white">
-        An iOS shopping app that automatically scans items in a customer's offline grocery cart, successfully increased shop revenue by 25%.
+    <p class="italic w-full text-xl text-white pr-[20%]">
+      {desc}
     </p>
   </div>
-</section>
 
-<style>
-   .smart-image-container {
-    overflow: hidden;
-  }
-</style>
+  <div
+  class="md:hidden flex flex-col items-start p-[6%] gap-2 mb-[15%]"
+>
+  <div class="flex gap-4 text-[#5B3EFF] font-playfair">
+    Mobile | UX Design | UX Writing
+  </div>
+  <div class="text-left">
+    <Heading text={title} />
+  </div>
+  <p class="italic w-full text-xl text-left">
+    {desc}
+  </p>
+</div>
+
+
+</section>
