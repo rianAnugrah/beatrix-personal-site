@@ -37,3 +37,4 @@ pnpm-debug.log*
 
 # Optional: Uncomment if using TypeScript
 # *.tsbuildinfo
+.vercel

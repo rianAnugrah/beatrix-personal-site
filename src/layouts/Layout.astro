@@ -23,7 +23,11 @@ const { title } = Astro.props;
 
     <title>{title}</title>
 
-    
+    <style>
+      .font-playfair {
+        font-family: 'Playfair Display', serif;
+      }
+    </style>
   </head>
   <body class="text-[#020202] bg-[#FFF2EF] sm:bg-white" style="font-family: 'Open Sans', sans-serif;">
     <slot />
