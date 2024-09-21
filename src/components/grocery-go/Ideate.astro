@@ -1,151 +1,87 @@
-<div style="width: 360px;  padding: 24px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: inline-flex">
-    <div style="align-self: stretch; height: 320px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
-      <div style="width: 312px; height: 80px"><span style="color: #5B3EFF; font-size: 18px; font-family: Playfair Display; font-weight: 700; word-wrap: break-word">IDEATION 1<br/></span><span style="color: #020202; font-size: 20px; font-family: Playfair Display; font-weight: 600; word-wrap: break-word">Checkout quickly with discounts automatically applied</span></div>
-      <div style="width: 312px"><span style="color: #020202; font-size: 16px; font-family: Open Sans; font-weight: 400; word-wrap: break-word">The features that we included in the prototype were:
-      <br/>• Account setup and tutorial on how to use the app
-      <br/>• Discounts applied when checking out.
-      <br/>• Rewards after done shopping.
-      <br/>• Online receipt.
-      <br/><br/></span><span style="color: #020202; font-size: 16px; font-family: Open Sans; font-style: italic; font-weight: 600; word-wrap: break-word">Below is still under version 1 of the design. We improved it in the next version.</span></div>
-    </div>
-    <div style="align-self: stretch; height: 79px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
-      <div style="width: 312px; color: #020202; font-size: 20px; font-family: Playfair Display; font-weight: 600; word-wrap: break-word">Scenario and testing V1</div>
-      <div style="width: 312px; color: #020202; font-size: 16px; font-family: Open Sans; font-weight: 400; word-wrap: break-word">Before we did the testing, we gave the user the scenario:</div>
-    </div>
-    <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
-      <div style="width: 48px; height: 45px; position: relative">
-        <div style="width: 25.21px; height: 23.63px; left: 22.79px; top: 21.37px; position: absolute; background: #020202"></div>
-        <div style="width: 20px; height: 33.75px; left: -0px; top: 5.62px; position: absolute; background: #020202"></div>
-        <div style="width: 10px; height: 16.88px; left: 24px; top: 5.62px; position: absolute; background: #020202"></div>
-        <div style="width: 18px; height: 11.25px; left: 8px; top: -0px; position: absolute; background: #020202"></div>
-        <div style="width: 22px; height: 1.88px; left: 6px; top: 15px; position: absolute; background: #020202"></div>
-        <div style="width: 22px; height: 1.88px; left: 6px; top: 20.62px; position: absolute; background: #020202"></div>
-        <div style="width: 22px; height: 1.88px; left: 6px; top: 26.25px; position: absolute; background: #020202"></div>
+---
+import { Image } from "astro:assets";
+import ideation from "../../assets/grocery-go-ideation.png";
+import IconFile from "../../components/icons/IconFile.astro";
+import IconLaptop from "../../components/icons/IconLaptop.astro";
+import IconPremium from "../../components/icons/IconPremium.astro";
+import IconReceipt from "../../components/icons/IconReceipt.astro";
+---
+
+<div class="w-full  mx-auto py-6 px-[6%] flex flex-col items-center gap-6" id="ideate">
+    <div class="w-full flex flex-col gap-2">
+      <div class="mb-2">
+        <span class="text-[#5B3EFF] text-lg font-bold font-playfair">IDEATION 1<br/></span>
+        <span class="text-[#020202] text-xl font-semibold font-playfair">Checkout quickly with discounts automatically applied</span>
       </div>
-      <div style="justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-        <div style="width: 236px; text-align: center; color: #020202; font-size: 16px; font-family: Open Sans; font-weight: 400; word-wrap: break-word">1. Users have to be able to sign up.</div>
+      <div class="text-[#020202] text-base font-opensans">
+        <p>The features that we included in the prototype were:</p>
+        <ul class="list-disc pl-5 mt-2">
+          <li>Account setup and tutorial on how to use the app</li>
+          <li>Discounts applied when checking out.</li>
+          <li>Rewards after done shopping.</li>
+          <li>Online receipt.</li>
+        </ul>
+        <p class="mt-4 italic font-semibold">Below is still under version 1 of the design. We improved it in the next version.</p>
       </div>
     </div>
-    <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
-      <div style="width: 48px; height: 47px; position: relative">
-        <div style="width: 45px; height: 44.06px; left: 1.31px; top: 1.47px; position: absolute">
-          <div style="width: 45px; height: 44.06px; left: 0px; top: 0px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 6px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 9px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 34.50px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 37.50px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 9.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 6.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 12.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 15.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 18.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 21.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 24.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 27.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 30.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 33.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 36.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 2.25px; height: 1.47px; left: 24.75px; top: 5.87px; position: absolute; background: #020202"></div>
-          <div style="width: 3px; height: 1.47px; left: 12px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 3px; height: 1.47px; left: 30px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 12px; height: 1.47px; left: 16.50px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 13.50px; top: 9.55px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 18px; top: 9.55px; position: absolute; background: #020202"></div>
-          <div style="width: 16.50px; height: 14.69px; left: 28.50px; top: -0px; position: absolute; background: #020202"></div>
-          <div style="width: 3px; height: 1.47px; left: 39px; top: 3.67px; position: absolute; background: #020202"></div>
-          <div style="width: 3px; height: 1.47px; left: 39px; top: 6.61px; position: absolute; background: #020202"></div>
-          <div style="width: 3px; height: 1.47px; left: 31.50px; top: 3.67px; position: absolute; background: #020202"></div>
-          <div style="width: 3px; height: 1.47px; left: 31.50px; top: 6.61px; position: absolute; background: #020202"></div>
-          <div style="width: 9px; height: 1.47px; left: 28.50px; top: 19.09px; position: absolute; background: #020202"></div>
-          <div style="width: 9px; height: 1.47px; left: 28.50px; top: 22.03px; position: absolute; background: #020202"></div>
-          <div style="width: 9px; height: 1.47px; left: 28.50px; top: 24.97px; position: absolute; background: #020202"></div>
+    <div class="w-full">
+      <h3 class="text-[#020202] text-xl font-semibold font-playfair mb-2">Scenario and testing V1</h3>
+      <p class="text-[#020202] text-base font-opensans">Before we did the testing, we gave the user the scenario:</p>
+    </div>
+    
+    
+
+
+    <div class="flex flex-col md:flex-row justify-center gap-4">
+      <div class="flex flex-col items-center gap-2  w-[236px]">
+        <div class="w-12 h-12 relative">
+          <IconFile />
         </div>
+        <p class="text-center text-[#020202] text-base font-opensans">1. Users have to be able to sign up.</p>
       </div>
-      <div style="justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-        <div style="width: 236px; text-align: center; color: #020202; font-size: 16px; font-family: Open Sans; font-weight: 400; word-wrap: break-word">Users are able to follow and replay the tutorial.</div>
-      </div>
-    </div>
-    <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
-      <div style="width: 48px; height: 47px; position: relative">
-        <div style="width: 48px; height: 21.15px; left: 0px; top: 25.85px; position: absolute; background: #020202"></div>
-        <div style="width: 24px; height: 22.71px; left: 12px; top: 0px; position: absolute; background: #020202"></div>
-        <div style="width: 1.58px; height: 4.48px; left: 14.63px; top: 2.90px; position: absolute; transform: rotate(-44.40deg); transform-origin: 0 0; background: #020202"></div>
-        <div style="width: 4.48px; height: 1.58px; left: 29.03px; top: 4.93px; position: absolute; transform: rotate(-44.40deg); transform-origin: 0 0; background: #020202"></div>
-        <div style="width: 4.80px; height: 1.57px; left: 10.40px; top: 14.10px; position: absolute; background: #020202"></div>
-        <div style="width: 4.80px; height: 1.57px; left: 32.80px; top: 14.10px; position: absolute; background: #020202"></div>
-        <div style="width: 1.60px; height: 4.70px; left: 23.20px; top: 18.80px; position: absolute; background: #020202"></div>
-      </div>
-      <div style="justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-        <div style="width: 236px; text-align: center; color: #020202; font-size: 16px; font-family: Open Sans; font-weight: 400; word-wrap: break-word">They can understand how the reward works.</div>
-      </div>
-    </div>
-    <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
-      <div style="width: 48px; height: 46px; position: relative">
-        <div style="width: 3px; height: 2.87px; left: 31.50px; top: 23px; position: absolute; background: #020202"></div>
-        <div style="width: 12px; height: 2.87px; left: 13.50px; top: 23px; position: absolute; background: #020202"></div>
-        <div style="width: 3px; height: 2.88px; left: 31.50px; top: 17.25px; position: absolute; background: #020202"></div>
-        <div style="width: 12px; height: 2.88px; left: 13.50px; top: 17.25px; position: absolute; background: #020202"></div>
-        <div style="width: 21px; height: 2.88px; left: 13.50px; top: 11.50px; position: absolute; background: #020202"></div>
-        <div style="width: 33px; height: 40.25px; left: 7.50px; top: 2.87px; position: absolute; background: #020202"></div>
-      </div>
-      <div style="justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-        <div style="width: 236px; text-align: center; color: #020202; font-size: 16px; font-family: Open Sans; font-weight: 400; word-wrap: break-word">Users are able to check their purchase history.</div>
-      </div>
-    </div>
-    <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
-      <div style="width: 48px; height: 47px; position: relative">
-        <div style="width: 45px; height: 44.06px; left: 1.31px; top: 1.47px; position: absolute">
-          <div style="width: 45px; height: 44.06px; left: 0px; top: 0px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 6px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 9px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 34.50px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 37.50px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 9.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 6.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 12.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 15.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 18.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 21.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 24.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 27.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 30.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 33.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 36.75px; top: 32.31px; position: absolute; background: #020202"></div>
-          <div style="width: 2.25px; height: 1.47px; left: 24.75px; top: 5.87px; position: absolute; background: #020202"></div>
-          <div style="width: 3px; height: 1.47px; left: 12px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 3px; height: 1.47px; left: 30px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 12px; height: 1.47px; left: 16.50px; top: 35.25px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 13.50px; top: 9.55px; position: absolute; background: #020202"></div>
-          <div style="width: 1.50px; height: 1.47px; left: 18px; top: 9.55px; position: absolute; background: #020202"></div>
-          <div style="width: 16.50px; height: 14.69px; left: 28.50px; top: -0px; position: absolute; background: #020202"></div>
-          <div style="width: 3px; height: 1.47px; left: 39px; top: 3.67px; position: absolute; background: #020202"></div>
-          <div style="width: 3px; height: 1.47px; left: 39px; top: 6.61px; position: absolute; background: #020202"></div>
-          <div style="width: 3px; height: 1.47px; left: 31.50px; top: 3.67px; position: absolute; background: #020202"></div>
-          <div style="width: 3px; height: 1.47px; left: 31.50px; top: 6.61px; position: absolute; background: #020202"></div>
-          <div style="width: 9px; height: 1.47px; left: 28.50px; top: 19.09px; position: absolute; background: #020202"></div>
-          <div style="width: 9px; height: 1.47px; left: 28.50px; top: 22.03px; position: absolute; background: #020202"></div>
-          <div style="width: 9px; height: 1.47px; left: 28.50px; top: 24.97px; position: absolute; background: #020202"></div>
+      <div class="flex flex-col items-center gap-2  w-[236px]">
+        <div class="w-12 h-12 relative">
+         <IconLaptop />
         </div>
+        <p class="text-center text-[#020202] text-base font-opensans">Users are able to follow and replay the tutorial.</p>
       </div>
-      <div style="justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-        <div style="width: 236px; text-align: center; color: #020202; font-size: 16px; font-family: Open Sans; font-weight: 400; word-wrap: break-word">Users can quickly and easily have their items scanned automatically.</div>
-      </div>
-    </div>
-    <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
-      <div style="width: 312px; color: #020202; font-size: 16px; font-family: Open Sans; font-weight: 400; word-wrap: break-word">While users successfully navigated account setup, rewards, and the tutorial, our analysis uncovered several areas for improvement:</div>
-    </div>
-    <div style="align-self: stretch; height: 215px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
-      <div style="width: 312px; color: #020202; font-size: 20px; font-family: Playfair Display; font-weight: 600; word-wrap: break-word">Steps of payment method options</div>
-      <div style="width: 312px; color: #020202; font-size: 16px; font-family: Open Sans; font-weight: 400; word-wrap: break-word">Users found the process of adding a payment method too confusing due to the multiple steps involved. <br/><br/>They suggested a more intuitive approach, such as directly entering payment details instead of having to select from a dropdown menu.</div>
-    </div>
-    <div style="align-self: stretch; height: 123px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
-      <div style="width: 312px; color: #020202; font-size: 20px; font-family: Playfair Display; font-weight: 600; word-wrap: break-word">Find the receipt</div>
-      <div style="width: 312px; color: #020202; font-size: 16px; font-family: Open Sans; font-weight: 400; word-wrap: break-word">Users had a hard time finding the receipt. They took the time to figure out the 'History' button, which could direct them to the purchase history.</div>
-    </div>
-    <div style="align-self: stretch; height: 189px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
-      <div style="width: 312px; color: #020202; font-size: 20px; font-family: Playfair Display; font-weight: 600; word-wrap: break-word">Issue with the UI</div>
-      <div style="width: 312px; color: #020202; font-size: 16px; font-family: Open Sans; font-weight: 400; word-wrap: break-word">After talking to our design mentor, we realized that there was something that we lacked, which was the UI design. There was no color consistency between the logo and the button color. Also, we should pay more attention to the position of the text and the font size. 
+      <div class="flex flex-col items-center gap-2  w-[236px]">
+        <div class="w-12 h-12 relative">
+         <IconPremium />
+        </div>
+        <p class="text-center text-[#020202] text-base font-opensans">They can understand how the reward works.</p>
       </div>
     </div>
-    <img style="width: 312px; height: 338.99px" src="https://via.placeholder.com/312x339" />
+    <div class="flex flex-col md:flex-row justify-center gap-4">
+      <div class="flex flex-col items-center gap-2  w-[236px]">
+        <div class="w-12 h-12 relative">
+         <IconReceipt />
+        </div>
+        <p class="text-center text-[#020202] text-base font-opensans">Users are able to check their purchase history.</p>
+      </div>
+      <div class="flex flex-col items-center gap-2  w-[236px]">
+        <div class="w-12 h-12 relative">
+          <IconLaptop />
+        </div>
+        <p class="text-center text-[#020202] text-base font-opensans">Users can quickly and easily have their items scanned automatically.</p>
+      </div>
+    </div>
+
+
+    <div class="w-full">
+      <p class="text-[#020202] text-base font-opensans">While users successfully navigated account setup, rewards, and the tutorial, our analysis uncovered several areas for improvement:</p>
+    </div>
+    <div class="w-full">
+      <h3 class="text-[#020202] text-xl font-semibold font-playfair mb-2">Steps of payment method options</h3>
+      <p class="text-[#020202] text-base font-opensans">Users found the process of adding a payment method too confusing due to the multiple steps involved. <br/><br/>They suggested a more intuitive approach, such as directly entering payment details instead of having to select from a dropdown menu.</p>
+    </div>
+    <div class="w-full">
+      <h3 class="text-[#020202] text-xl font-semibold font-playfair mb-2">Find the receipt</h3>
+      <p class="text-[#020202] text-base font-opensans">Users had a hard time finding the receipt. They took the time to figure out the 'History' button, which could direct them to the purchase history.</p>
+    </div>
+    <div class="w-full">
+      <h3 class="text-[#020202] text-xl font-semibold font-playfair mb-2">Issue with the UI</h3>
+      <p class="text-[#020202] text-base font-opensans">After talking to our design mentor, we realized that there was something that we lacked, which was the UI design. There was no color consistency between the logo and the button color. Also, we should pay more attention to the position of the text and the font size.</p>
+    </div>
+    <Image class="w-full h-auto md:w-4/5" src={ideation} alt="UI Design Issue" />
   </div>

@@ -8,17 +8,22 @@ import Define from '../../components/grocery-go/Define.astro';
 import Ideate from '../../components/grocery-go/Ideate.astro';
 import Prototype from '../../components/grocery-go/Prototype.astro';
 import Test from '../../components/grocery-go/Test.astro';
+import BottomNav from '../../components/grocery-go/BottomNav.astro';
+import SectionNav from '../../components/grocery-go/SectionNav.astro';
 ---
 
 <Layout title="Hey, I'm Beatrix!">
     <Navbar />
     <main>
        <Overview />
-       <!-- <Emphatize />
+       <Emphatize />
        <Define />
        <Ideate />
        <Prototype />
-       <Test /> -->
+       <Test />
+       <BottomNav />
     </main>
     <Footer />
+    <div class="block w-full h-20"></div>
+    <SectionNav />
 </Layout>
