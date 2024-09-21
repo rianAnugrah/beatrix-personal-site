@@ -1,7 +1,6 @@
 ---
 const title = "Smart Shopping Cart";
-const desc  = `An iOS shopping app that automatically scans items in a customer's offline grocery cart, successfully increased shop revenue by 25%.`
-
+const desc = `An iOS shopping app that automatically scans items in a customer's offline grocery cart, successfully increased shop revenue by 25%.`;
 
 import { Image } from "astro:assets";
 import scMobile from "../../assets/Container - Cart-m.png"; // Make sure to add your image to this path
@@ -15,7 +14,7 @@ import Heading from "../Heading.astro";
   <Image
     src={scDesktop}
     alt="Savicore image-co"
-    class="hidden xl:block w-full h-full z-10 group-hover:scale-110 transition-all duration-500 ease-out"
+    class="hidden xl:block w-full h-full z-[1] group-hover:scale-110 transition-all duration-500 ease-out"
   />
 
   <Image
@@ -31,35 +30,35 @@ import Heading from "../Heading.astro";
   />
 
   <div
-    class="hidden absolute w-2/5 right-0 top-1/2 -translate-y-1/2 md:flex flex-col items-start justify-center gap-4"
+    class="hidden absolute w-2/5 right-0 top-1/2 z-[2] pr-[6%] -translate-y-1/2 md:flex flex-col items-start justify-center gap-4"
   >
     <div class="flex gap-4">
-      
       <Pile text="Mobile" />
       <Pile text="UX Design" />
       <Pile text="UX Writing" />
     </div>
     <div class="text-white text-left">
-      <Heading text={title} />
+      <h2
+        class={`text-left w-full text-[32px] xl:text-[64px] font-bold leading-[86px] text-white`}
+        style="font-family: 'Playfair Display', serif;"
+      >
+        {title}
+      </h2>
     </div>
     <p class="italic w-full text-xl text-white pr-[20%]">
       {desc}
     </p>
   </div>
 
-  <div
-  class="md:hidden flex flex-col items-start p-[6%] gap-2 mb-[15%]"
->
-  <div class="flex gap-4 text-[#5B3EFF] font-playfair">
-    Mobile | UX Design | UX Writing
+  <div class="md:hidden flex flex-col items-start p-[6%] gap-2 mb-[15%]">
+    <div class="flex gap-4 text-[#5B3EFF] font-playfair">
+      Mobile | UX Design | UX Writing
+    </div>
+    <div class="text-left">
+      <Heading text={title} />
+    </div>
+    <p class="italic w-full text-xl text-left">
+      {desc}
+    </p>
   </div>
-  <div class="text-left">
-    <Heading text={title} />
-  </div>
-  <p class="italic w-full text-xl text-left">
-    {desc}
-  </p>
-</div>
-
-
 </section>
