@@ -1,0 +1,61 @@
+---
+import { Image } from "astro:assets";
+import mockup1 from "../../assets/grocery-go-mockup-1.png";
+import mockup2 from "../../assets/grocery-go-mockup-3.png";
+import vid2 from "../../assets/vid-2.gif"
+
+---
+
+<div class="w-full mx-auto py-6 px-[6%] flex flex-col items-center gap-6" id="prototype">
+    <div class="w-full flex flex-col gap-2">
+      <div class="mb-2">
+        <span class="text-[#5B3EFF] text-lg font-bold font-playfair">FINAL DESIGN<br/></span>
+        <span class="text-[#020202] text-xl font-semibold font-playfair">Focus on the design looks</span>
+      </div>
+      <div class="text-[#020202] text-base font-opensans">
+        <p>We enhanced our design with new UI elements, leading to these findings.</p>
+      </div>
+    </div>
+    <div class="w-full flex flex-col gap-2">
+      <h3 class="text-[#020202] text-lg font-semibold font-playfair">Set up an account and view simple tutorial</h3>
+      <p class="text-[#020202] text-base font-opensans">In this new tutorial design, we made the picture smaller balance with the font under the picture.</p>
+      <p class="text-[#020202] text-base font-opensans">I included the special offers in the Terms of Use section. I highlighted the title of the tutorial to make it pop up to the users. We tried to make the picture smaller balance with the font under the picture.</p>
+    </div>
+  </div>
+  
+  <Image class="w-full h-auto md:w-4/5 mx-auto" src={mockup1} alt="UI Design Issue" />
+  
+  <div class="w-full mx-auto py-6 px-[6%] flex flex-col items-center gap-6 bg-white">
+    <div class="w-full flex flex-col gap-2">
+      <h3 class="text-[#020202] text-lg font-semibold font-playfair">Grab the items and check out</h3>
+      <p class="text-[#020202] text-base font-opensans">In the checkout page, discount was automatically applied to the system. And after pressing the checkout button, users will be directed to payment method options.</p>
+      <p class="text-[#020202] text-base font-opensans">The cart will be automatically updated when we put the stuff in the cart. Discount was automatically applied to the system.</p>
+    </div>
+    
+    <div class="w-full  flex items-center justify-center">
+      <div class="relative">
+        <div class="loading-spinner absolute inset-0 flex items-center justify-center " id="spinner">
+          <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+        </div>
+        <Image 
+          src={vid2} 
+          alt="Grocery Go Demo" 
+          class="w-full h-auto" 
+          onload="document.getElementById('spinner').style.display='none';"
+        />
+      </div>
+    </div>
+    
+    <div class="w-full flex flex-col gap-4">
+      <h3 class="text-[#020202] text-lg font-semibold font-playfair">Get a receipt and collect the reward</h3>
+      <p class="text-[#020202] text-base font-opensans">Receipt and reward are available right away after users pay the items.</p>
+    </div>
+  </div>
+  
+  <Image class="w-full h-auto md:w-4/5 mx-auto" src={mockup2} alt="UI Design Issue" />
+  
+  <div class="w-[240px] mx-auto py-4 ">
+    <a href="#" class="block w-full py-4 px-6 bg-[#4D2EFF] text-white text-center font-bold rounded-lg shadow-md hover:bg-[#3D1EFF] transition-colors duration-300">
+      View prototype
+    </a>
+  </div>

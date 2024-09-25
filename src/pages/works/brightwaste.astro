@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import Overview from '../../components/brightwaste/Overview.astro';
+import Emphatize from '../../components/brightwaste/Emphatize.astro';
+import Define from '../../components/brightwaste/Define.astro';
+import Ideate from '../../components/brightwaste/Ideate.astro';
+import Prototype from '../../components/brightwaste/Prototype.astro';
+import Test from '../../components/brightwaste/Test.astro';
+import BottomNav from '../../components/brightwaste/BottomNav.astro';
+import SectionNav from '../../components/brightwaste/SectionNav.astro';
+---
+
+<Layout title="Hey, I'm Beatrix!">
+    <Navbar />
+    <main>
+       <Overview />
+       <Emphatize />
+       <Define />
+       <Ideate />
+       <Prototype />
+       <Test />
+       <BottomNav />
+    </main>
+    <Footer />
+    <div class="block w-full h-20"></div>
+    <SectionNav />
+</Layout>
