@@ -6,56 +6,75 @@ import vid2 from "../../assets/vid-2.gif"
 
 ---
 
-<div class="w-full mx-auto py-6 px-[6%] flex flex-col items-center gap-6" id="prototype">
-    <div class="w-full flex flex-col gap-2">
-      <div class="mb-2">
-        <span class="text-[#5B3EFF] text-lg font-bold font-playfair">FINAL DESIGN<br/></span>
-        <span class="text-[#020202] text-xl font-semibold font-playfair">Focus on the design looks</span>
-      </div>
-      <div class="text-[#020202] text-base font-opensans">
-        <p>We enhanced our design with new UI elements, leading to these findings.</p>
+
+
+<!-- PROTOTYPE -->
+
+<div class="flex-grow-0 flex-shrink-0 w-full h-[243.28px] relative bg-[#7ac4b6]">
+  <img
+    src="image---homepage-1.png"
+    class="w-full h-[207px] absolute left-[15px] top-[17px] rounded-[10px] object-none"
+  /><img
+    src="get-offer---describe.png"
+    class="w-full h-[206px] absolute left-32 top-[17px] rounded-[10px] object-none"
+  />
+  <div class="w-full h-[274px] absolute left-[852px] top-[47px] rounded-[15px]"></div>
+  <img
+    src="get-offer---get-choices-1.png"
+    class="w-full h-[115px] absolute left-[236px] top-[18px] rounded-[10px] object-cover"
+  /><img
+    src="buyer---all-items-1.png"
+    class="w-full h-[60px] absolute left-[236px] top-[143px] rounded-[10px] object-cover"
+  />
+</div>
+<div
+  class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6"
+>
+  <div
+    class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-4"
+  >
+    <div
+      class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
+    >
+      <p class="self-stretch flex-grow-0 flex-shrink-0 w-full text-left">
+        <span
+          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left text-[#5b3eff]"
+          >MULTITASKING</span
+        ><br /><span
+          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+          >Learn as a designer and developer!</span
+        >
+      </p>
+    </div>
+    <div
+      class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-8"
+    >
+      <div
+        class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
+      >
+        <p
+          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
+        >
+          Due to time constraints, I took on the role of front-end developer (minor task only).
+          Please feel free to review the prototype and development progress on GitHub.
+        </p>
       </div>
     </div>
-    <div class="w-full flex flex-col gap-2">
-      <h3 class="text-[#020202] text-lg font-semibold font-playfair">Set up an account and view simple tutorial</h3>
-      <p class="text-[#020202] text-base font-opensans">In this new tutorial design, we made the picture smaller balance with the font under the picture.</p>
-      <p class="text-[#020202] text-base font-opensans">I included the special offers in the Terms of Use section. I highlighted the title of the tutorial to make it pop up to the users. We tried to make the picture smaller balance with the font under the picture.</p>
+    <div
+      class="flex justify-center items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5 p-4 rounded-[15px] bg-[#4d2eff]"
+      style="box-shadow: 4px 4px 2.799999952316284px 0 rgba(2,2,2,0.25);"
+    >
+      <p class="flex-grow-0 flex-shrink-0 text-lg font-bold text-center text-[#fff2ef]">
+        View prototype
+      </p>
+    </div>
+    <div
+      class="flex justify-center items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5 p-4 rounded-[15px] bg-[#e83b5b]"
+      style="box-shadow: 4px 4px 2.799999952316284px 0 rgba(2,2,2,0.25);"
+    >
+      <p class="flex-grow-0 flex-shrink-0 text-lg font-bold text-center text-[#fff2ef]">
+        View development
+      </p>
     </div>
   </div>
-  
-  <Image class="w-full h-auto md:w-4/5 mx-auto" src={mockup1} alt="UI Design Issue" />
-  
-  <div class="w-full mx-auto py-6 px-[6%] flex flex-col items-center gap-6 bg-white">
-    <div class="w-full flex flex-col gap-2">
-      <h3 class="text-[#020202] text-lg font-semibold font-playfair">Grab the items and check out</h3>
-      <p class="text-[#020202] text-base font-opensans">In the checkout page, discount was automatically applied to the system. And after pressing the checkout button, users will be directed to payment method options.</p>
-      <p class="text-[#020202] text-base font-opensans">The cart will be automatically updated when we put the stuff in the cart. Discount was automatically applied to the system.</p>
-    </div>
-    
-    <div class="w-full  flex items-center justify-center">
-      <div class="relative">
-        <div class="loading-spinner absolute inset-0 flex items-center justify-center " id="spinner">
-          <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
-        </div>
-        <Image 
-          src={vid2} 
-          alt="Grocery Go Demo" 
-          class="w-full h-auto" 
-          onload="document.getElementById('spinner').style.display='none';"
-        />
-      </div>
-    </div>
-    
-    <div class="w-full flex flex-col gap-4">
-      <h3 class="text-[#020202] text-lg font-semibold font-playfair">Get a receipt and collect the reward</h3>
-      <p class="text-[#020202] text-base font-opensans">Receipt and reward are available right away after users pay the items.</p>
-    </div>
-  </div>
-  
-  <Image class="w-full h-auto md:w-4/5 mx-auto" src={mockup2} alt="UI Design Issue" />
-  
-  <div class="w-[240px] mx-auto py-4 ">
-    <a href="#" class="block w-full py-4 px-6 bg-[#4D2EFF] text-white text-center font-bold rounded-lg shadow-md hover:bg-[#3D1EFF] transition-colors duration-300">
-      View prototype
-    </a>
-  </div>
+</div>

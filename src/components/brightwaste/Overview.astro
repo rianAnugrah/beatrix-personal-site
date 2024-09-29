@@ -1,49 +1,66 @@
 ---
 import { Image } from "astro:assets";
 import brightwaste from "../../assets/brightwaste/brightwaste.png";
-
 ---
 
-<div class="w-full  flex-col justify-start items-center gap-14 inline-flex">
-
-  <div class="self-stretch  flex-col justify-start items-center flex ">
-
-    <div class="flex flex-col items-start gap-4 relative px-[6%] my-[20px]">
-      <div class="relative self-stretch mt-[-1.00px] [font-family:'Playfair_Display',Helvetica] font-medium text-[#020202] text-[32px] text-center tracking-[0] leading-[normal]">
+<div class="w-full flex-col justify-start items-center gap-14 inline-flex">
+  <div class="self-stretch flex-col justify-start items-center flex">
+    <div class="flex flex-col items-start gap-4 relative lg:px-[10%] my-[20px]">
+      <div
+        class="relative self-stretch mt-[-1.00px] font-['Playfair_Display'] font-medium text-[#020202] text-[32px] text-center tracking-[0] leading-[normal]"
+      >
         BrightWaste Sustainable Web App
       </div>
-      <p class="relative self-stretch [font-family:'Playfair_Display-Bold',Helvetica] font-normal text-[#020202] text-2xl text-center tracking-[0] leading-[normal]">
+      <p
+        class="relative self-stretch [font-family:'Playfair_Display-Bold',Helvetica] font-normal text-[#020202] text-2xl text-center tracking-[0] leading-[normal]"
+      >
         <span class="font-bold">🥳 </span>
-        <span class="[font-family:'Playfair_Display',Helvetica] font-medium">Courier Hacks Winner </span>
+        <span class="font-['Playfair_Display'] font-medium"
+          >Courier Hacks Winner
+        </span>
         <span class="font-bold">🥳 </span>
       </p>
-      <p class="relative self-stretch [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base text-center tracking-[0] leading-[normal]">
-        <span class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]">
-          A Sustainable Marketplace Website that can give people options either to{" "}
+      <p
+        class="relative self-stretch [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base text-center tracking-[0] leading-[normal]"
+      >
+        <span
+          class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]"
+        >
+          A Sustainable Marketplace Website that can give people options either
+          to{" "}
         </span>
-        <span class="[font-family:'Open_Sans-SemiBoldItalic',Helvetica] font-semibold italic">
+        <span
+          class="[font-family:'Open_Sans-SemiBoldItalic',Helvetica] font-semibold italic"
+        >
           sell the used items directly to the shop
         </span>
-        <span class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]">
+        <span
+          class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]"
+        >
           {" "}
           or to{" "}
         </span>
-        <span class="[font-family:'Open_Sans-SemiBoldItalic',Helvetica] font-semibold italic">
+        <span
+          class="[font-family:'Open_Sans-SemiBoldItalic',Helvetica] font-semibold italic"
+        >
           upcycle and sell it for a better price
         </span>
-        <span class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]">
+        <span
+          class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]"
+        >
           .
         </span>
       </p>
     </div>
-  
 
     <div class="w-full relative bg-gradient-to-bl from-[#ffdb97] to-[#a1ffec]">
-        <Image src={brightwaste} alt="Brightwaste" class="w-full h-full"/>
+      <Image src={brightwaste} alt="Brightwaste" class="w-full h-full" />
     </div>
   </div>
 
-  <div class="flex-col sm:flex-row justify-start items-center sm:items-start gap-6 flex w-full px-[6%]">
+  <div
+    class="flex-col sm:flex-row justify-start items-center sm:items-start gap-6 flex w-full lg:px-[10%]"
+  >
     <div class="flex-col justify-start items-center gap-2 flex sm:w-1/3">
       <div class="w-8 h-8 p-[3.50px] justify-center items-center inline-flex">
         <svg
@@ -69,7 +86,7 @@ import brightwaste from "../../assets/brightwaste/brightwaste.png";
         UX Designers, Project Manager, and myself as a Designer/Content Lead
       </div>
     </div>
-    <div class="flex-col justify-start items-center gap-2 flex  sm:w-1/3">
+    <div class="flex-col justify-start items-center gap-2 flex sm:w-1/3">
       <div class="w-8 h-8 relative">
         <svg
           width="32"
@@ -86,7 +103,9 @@ import brightwaste from "../../assets/brightwaste/brightwaste.png";
             fill="#020202"></path>
         </svg>
       </div>
-      <div class="text-center text-[#020202] text-xl font-medium !font-playfair">
+      <div
+        class="text-center text-[#020202] text-xl font-medium !font-playfair"
+      >
         DURATION
       </div>
       <div
@@ -95,7 +114,7 @@ import brightwaste from "../../assets/brightwaste/brightwaste.png";
         8 weeks <br />(Jan - Feb 2020)
       </div>
     </div>
-    <div class="flex-col justify-start items-center gap-2 flex  sm:w-1/3">
+    <div class="flex-col justify-start items-center gap-2 flex sm:w-1/3">
       <div class="w-8 h-8 p-0.5 justify-center items-center inline-flex">
         <svg
           width="28"
@@ -109,7 +128,9 @@ import brightwaste from "../../assets/brightwaste/brightwaste.png";
             fill="#020202"></path>
         </svg>
       </div>
-      <div class="text-center text-[#020202] text-xl font-medium !font-playfair">
+      <div
+        class="text-center text-[#020202] text-xl font-medium !font-playfair"
+      >
         TOOLS
       </div>
       <div
@@ -119,97 +140,165 @@ import brightwaste from "../../assets/brightwaste/brightwaste.png";
       </div>
     </div>
   </div>
-  
-      <div class="flex flex-col items-center gap-6 p-6 relative">
-        <div class="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-          <p class="relative self-stretch mt-[-1.00px] [font-family:'Playfair_Display',Helvetica] font-normal text-transparent text-lg tracking-[0] leading-[normal]">
-            <span class="font-bold text-[#5a3dff]">
-              OVERVIEW
-              <br />
-            </span>
-            <span class="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#020202] text-xl">
-              Analyze the goal of BrightWaste
-            </span>
-          </p>
-          <div class="flex flex-col items-start gap-0.5">
-            <p class="relative self-stretch [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0] leading-[normal]">
-              <span class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]">
-                Our main goal was to encourage people to live sustainably and earn more money at the same time. The idea
-                of recycling has been a trend since years ago. The question is, does it work?
-                <br />
-              </span>
-            </p>
-            <p class="relative self-stretch [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0] leading-[normal]">
-              <span class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]">
-                <br />
-              </span>
-            </p>
-            <p class="relative self-stretch [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0] leading-[normal]">
-              <span class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]">
-                Based on the research,
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start justify-center gap-[140px] relative self-stretch w-full flex-[0_0_auto] ">
-          <div class="flex px-[5%] items-start  gap-2.5 py-4 relative flex-1 grow bg-[#DAD4FE] rounded-[15px]">
-            <svg class=" w-6 md:w-[70px]" viewBox="0 0 72 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M43.373 39.355C43.373 37.32 42.6934 35.56 41.3002 34.13C39.1934 31.985 35.0817 31.71 32.703 32.15C31.7176 27.6125 36.4749 21.8375 42.6254 19.3625L37.9021 14C28.6253 17.575 19.4845 25.77 21.0476 36.1375C22.0331 42.6825 26.7224 47 33.3487 47C36.237 47 38.6497 46.3125 40.5526 44.9375C42.4555 43.5625 43.373 41.6925 43.373 39.355ZM70.7275 39.355C70.7275 37.32 70.0479 35.56 68.6547 34.13C66.5139 31.985 62.4362 31.71 60.0575 32.15C59.0721 27.6125 63.8294 21.8375 69.9799 19.3625L65.2566 14C55.9799 17.575 46.873 25.77 48.4361 36.1375C49.4216 42.6825 54.0769 47 60.7032 47C63.5915 47 66.0042 46.3125 67.9071 44.9375C69.81 43.5625 70.7275 41.6925 70.7275 39.355Z" fill="#5585FF"/>
-              </svg>
-              
-            <p class="relative flex-1 mt-[-1.00px] [font-family:'Playfair_Display',Helvetica] font-normal text-[#020202] text-xl tracking-[0] leading-[40.3px]">
-              <span class="[font-family:'Playfair_Display',Helvetica] font-medium italic">
-                About 110 million glass bottles are thrown away and only one-third get recycled.{" "}
-              </span>
-              <span class="[font-family:'Open_Sans-Regular',Helvetica]">-- weforum.org</span>
-            </p>
-          </div>
-        </div>
-        <p class="relative self-stretch [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0] leading-[normal]">
-          It could be easier to sell the used item for a lower price, but instead of doing so,
-        </p>
-        <div class="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-          <div class="relative self-stretch mt-[-1.00px] [font-family:'Playfair_Display',Helvetica] font-semibold text-[#020202] text-xl tracking-[0] leading-[normal]">
-            Why don’t we...
-          </div>
-          <p class="relative self-stretch [font-family:'Open_Sans-Italic',Helvetica] font-normal italic text-[#020202] text-base tracking-[0] leading-[normal]">
-            get our creativity going and turn it into something more meaningful and can have more value to it?&nbsp;&nbsp;
-            <br />
-            <br />
-            It doesn&#39;t only impact the earth; also, we can contribute to the economy cycle.
-          </p>
-        </div>
-        <div class="flex flex-col items-center gap-6 relative self-stretch w-full flex-[0_0_auto]">
-          <div class="relative self-stretch mt-[-1.00px] [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0] leading-[normal]">
-            That’s why we provided...
-          </div>
-        </div>
-        <div class="flex items-start justify-center gap-[140px] relative self-stretch w-full flex-[0_0_auto]">
-          <div class="flex flex-col items-start gap-2.5 p-4 relative flex-1 grow bg-[#aae5fe] rounded-[15px]">
-            <div class="relative w-fit mt-[-1.00px] [font-family:'Playfair_Display',Helvetica] font-bold text-[#020202] text-2xl tracking-[0] leading-[normal]">
-              Brightwaste
-            </div>
-            <p class="relative self-stretch [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0] leading-[normal]">
-              <span class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]">
-                ...which helps people to get{" "}
-              </span>
-              <span class="[font-family:'Open_Sans-SemiBoldItalic',Helvetica] font-semibold italic">
-                plenty of ideas on how to recycle
-              </span>
-              <span class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]">
-                {" "}
-                their stuff and lets the potential seller get notified{" "}
-              </span>
-              <span class="[font-family:'Open_Sans-SemiBoldItalic',Helvetica] font-semibold italic">
-                when they can sell the products for a better price
-              </span>
-              <span class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]">
-                .
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-  
 
+  <div class="flex flex-col items-center gap-6 lg:px-[10%] p-6 relative">
+    <div
+      class="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]"
+    >
+      <p
+        class="relative self-stretch mt-[-1.00px] font-['Playfair_Display'] font-normal text-transparent text-lg tracking-[0] leading-[normal]"
+      >
+        <span class="font-bold text-[#5a3dff]">
+          OVERVIEW
+          <br />
+        </span>
+        <span
+          class="font-['Playfair_Display'] font-semibold text-[#020202] text-xl"
+        >
+          Analyze the goal of BrightWaste
+        </span>
+      </p>
+      <div class="flex flex-col items-start gap-0.5">
+        <p
+          class="relative self-stretch [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0] leading-[normal]"
+        >
+          <span
+            class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]"
+          >
+            Our main goal was to encourage people to live sustainably and earn
+            more money at the same time. The idea of recycling has been a trend
+            since years ago. The question is, does it work?
+            <br />
+          </span>
+        </p>
+        <p
+          class="relative self-stretch [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0] leading-[normal]"
+        >
+          <span
+            class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]"
+          >
+            <br />
+          </span>
+        </p>
+        <p
+          class="relative self-stretch [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0] leading-[normal]"
+        >
+          <span
+            class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]"
+          >
+            Based on the research,
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex items-start justify-center gap-[140px] relative self-stretch w-full flex-[0_0_auto] "
+    >
+      <div
+        class="flex px-[5%] items-start gap-2.5 py-4 relative flex-1 grow bg-[#DAD4FE] rounded-[15px]"
+      >
+        <svg
+          class="w-6 md:w-[70px]"
+          viewBox="0 0 72 70"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M43.373 39.355C43.373 37.32 42.6934 35.56 41.3002 34.13C39.1934 31.985 35.0817 31.71 32.703 32.15C31.7176 27.6125 36.4749 21.8375 42.6254 19.3625L37.9021 14C28.6253 17.575 19.4845 25.77 21.0476 36.1375C22.0331 42.6825 26.7224 47 33.3487 47C36.237 47 38.6497 46.3125 40.5526 44.9375C42.4555 43.5625 43.373 41.6925 43.373 39.355ZM70.7275 39.355C70.7275 37.32 70.0479 35.56 68.6547 34.13C66.5139 31.985 62.4362 31.71 60.0575 32.15C59.0721 27.6125 63.8294 21.8375 69.9799 19.3625L65.2566 14C55.9799 17.575 46.873 25.77 48.4361 36.1375C49.4216 42.6825 54.0769 47 60.7032 47C63.5915 47 66.0042 46.3125 67.9071 44.9375C69.81 43.5625 70.7275 41.6925 70.7275 39.355Z"
+            fill="#5585FF"></path>
+        </svg>
+
+        <p
+          class="relative flex-1 mt-[-1.00px] [font-family:'Playfair_Display'] font-normal text-[#020202] text-xl tracking-[0] leading-[40.3px]"
+        >
+          <span
+            class="font-['Playfair_Display'] font-medium italic"
+          >
+            About 110 million glass bottles are thrown away and only one-third
+            get recycled.{" "}
+          </span>
+          <span class="[font-family:'Open_Sans-Regular',Helvetica]"
+            >-- weforum.org</span
+          >
+        </p>
+      </div>
+    </div>
+    <p
+      class="relative self-stretch [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0] leading-[normal]"
+    >
+      It could be easier to sell the used item for a lower price, but instead of
+      doing so,
+    </p>
+    <div
+      class="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]"
+    >
+      <div
+        class="relative self-stretch mt-[-1.00px] font-['Playfair_Display'] font-semibold text-[#020202] text-xl tracking-[0] leading-[normal]"
+      >
+        Why don’t we...
+      </div>
+      <p
+        class="relative self-stretch [font-family:'Open_Sans-Italic',Helvetica] font-normal italic text-[#020202] text-base tracking-[0] leading-[normal]"
+      >
+        get our creativity going and turn it into something more meaningful and
+        can have more value to it?&nbsp;&nbsp;
+        <br />
+        <br />
+        It doesn&#39;t only impact the earth; also, we can contribute to the economy
+        cycle.
+      </p>
+    </div>
+    <div
+      class="flex flex-col items-center gap-6 relative self-stretch w-full flex-[0_0_auto]"
+    >
+      <div
+        class="relative self-stretch mt-[-1.00px] [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0] leading-[normal]"
+      >
+        That’s why we provided...
+      </div>
+    </div>
+    <div
+      class="flex items-start justify-center gap-[140px] relative self-stretch w-full flex-[0_0_auto]"
+    >
+      <div
+        class="flex flex-col items-start gap-2.5 p-4 relative flex-1 grow bg-[#aae5fe] rounded-[15px]"
+      >
+        <div
+          class="relative w-fit mt-[-1.00px] font-['Playfair_Display'] font-bold text-[#020202] text-2xl tracking-[0] leading-[normal]"
+        >
+          Brightwaste
+        </div>
+        <p
+          class="relative self-stretch [font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0] leading-[normal]"
+        >
+          <span
+            class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]"
+          >
+            ...which helps people to get{" "}
+          </span>
+          <span
+            class="[font-family:'Open_Sans-SemiBoldItalic',Helvetica] font-semibold italic"
+          >
+            plenty of ideas on how to recycle
+          </span>
+          <span
+            class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]"
+          >
+            {" "}
+            their stuff and lets the potential seller get notified{" "}
+          </span>
+          <span
+            class="[font-family:'Open_Sans-SemiBoldItalic',Helvetica] font-semibold italic"
+          >
+            when they can sell the products for a better price
+          </span>
+          <span
+            class="[font-family:'Open_Sans-Regular',Helvetica] font-normal text-[#020202] text-base tracking-[0]"
+          >
+            .
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
 
