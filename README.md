@@ -1,47 +1,163 @@
-# Astro Starter Kit: Minimal
 
-```sh
-npm create astro@latest -- --template minimal
+# Beatrix Intan Cendana
+
+![Astro Logo](https://astro.build/assets/press/astro-icon-dark.png)
+
+**Astro** | ⚡️ _Build fast, content-focused websites with ease!_
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Getting Started](#getting-started)
+4. [Prerequisites](#prerequisites)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [Configuration](#configuration)
+8. [Deployment](#deployment)
+9. [Contributing](#contributing)
+10. [License](#license)
+
+---
+
+## Overview
+
+This project is built using **Astro**, a modern framework that enables fast static site generation. Astro combines the best of React, Vue, Svelte, and other frameworks to create performant websites with minimal JavaScript.
+
+### Purpose
+
+Provide a brief description of what your project does and its purpose.
+
+Example:  
+"_This project is a personal portfolio site designed to showcase my portfolio._"
+
+---
+
+## Features
+
+- **Blazing fast** static site generation
+- **Zero JavaScript by default** - ships minimal JS for great performance
+- **SSR (Server-Side Rendering)** capabilities
+- **MDX Support** - Write Markdown with JSX components
+- **Built-in support for React, Vue, Svelte, and more**
+- **Tailwind CSS** integration for utility-first styling (if applicable)
+- **SEO Optimized** with best practices
+
+---
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have the following tools installed:
+
+- [Node.js](https://nodejs.org/) >= v14.x
+- [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
+  
+Optional but recommended:
+
+- [Astro CLI](https://docs.astro.build/getting-started/#install) (for easier development)
+
+---
+
+## Installation
+
+Clone the repo and install the dependencies.
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/your-astro-project.git
+
+# Navigate to the project directory
+cd your-astro-project
+
+# Install dependencies
+yarn install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Usage
 
-## 🚀 Project Structure
+To start the development server:
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+# Start the dev server
+yarn dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+This will start a local server on `http://localhost:3000` where you can view your site.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+To build the project for production:
 
-Any static assets, like images, can be placed in the `public/` directory.
+```bash
+yarn build
+```
 
-## 🧞 Commands
+This will output the optimized static assets to the `dist/` folder.
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Configuration
 
-## 👀 Want to learn more?
+Astro uses a configuration file (`astro.config.mjs`). Here are a few key settings you might want to customize:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **`buildOptions`**: Configure where Astro outputs the build.
+- **`site`**: Set your site's URL (used for SEO and RSS generation).
+- **`integrations`**: Add Astro integrations like Tailwind, Svelte, etc.
+
+Check out the [Astro Documentation](https://docs.astro.build) for more detailed configuration options.
+
+---
+
+## Deployment
+
+Astro supports various deployment platforms like Vercel, Netlify, and more. To deploy your project, follow these steps:
+
+1. Build the static files:
+   ```bash
+   yarn build
+   ```
+
+2. Deploy the `dist/` folder to your hosting provider.
+
+For detailed deployment instructions, check [Astro’s official deployment guide](https://docs.astro.build/en/guides/deploy/).
+
+---
+
+## Contributing
+
+Contributions are what make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project.
+2. Create your Feature Branch: (`git checkout -b feature/YourFeature`).
+3. Commit your Changes: (`git commit -m 'Add some YourFeature'`).
+4. Push to the Branch: (`git push origin feature/YourFeature`).
+5. Open a Pull Request.
+
+---
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## Acknowledgements
+
+- [Astro Docs](https://docs.astro.build)
+- [Tailwind CSS](https://tailwindcss.com/) (if used)
+- [React](https://reactjs.org/) (if used)
+- [FontAwesome](https://fontawesome.com/) (if used)
+
+---
+
+## Important Notes
+
+- [Breakpoint] 
+
+|mobile|tablet  portrait|tablet landscape|desktop|
+|------|----------------|----------------|-------|
+|default                |        lg      |  xl   |
