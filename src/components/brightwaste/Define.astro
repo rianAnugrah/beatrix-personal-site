@@ -1,23 +1,28 @@
 ---
 import { Image } from "astro:assets";
-import redRoutes from "../../assets/grocery-go-red-routes.png";
+import offerup from "../../assets/brightwaste/brightwaste-offerup.png";
+import persona from "../../assets/brightwaste/brightwaste-persona.png";
+import customerJourney from "../../assets/brightwaste/brightwaste-customer-journey.png";
+import customerJourney2 from "../../assets/brightwaste/brightwaste-customer-journey-2.png";
+import flowchart from "../../assets/brightwaste/brightwaste-flowchart.png";
 ---
+
 
 
     <!-- Define -->
 
     <div
-      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6"
+      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6 lg:px-[10%] "
     >
       <div
         class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
       >
         <p class="self-stretch flex-grow-0 flex-shrink-0 w-full text-left">
           <span
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left text-[#5b3eff]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left text-[#5b3eff] font-['Playfair_Display']"
             >MORE RESEARCH</span
           ><br /><span
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold font-['Playfair_Display']  text-left text-[#020202]"
             >Were there any competitive analysis we should worry about?</span
           >
         </p>
@@ -35,7 +40,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
             <div
               class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#00b2ff]"
             >
-              <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left text-[#020202]">
+              <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left text-[#020202] font-['Playfair_Display']">
                 Pros:
               </p>
               <p
@@ -49,7 +54,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
                   >Browse items in just a few minutes from your phone.
                 </span>
               </p>
-              <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left text-[#020202]">
+              <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left text-[#020202] font-['Playfair_Display']">
                 Cons:
               </p>
               <p
@@ -61,9 +66,10 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
             </div>
           </div>
         </div>
-        <img
-          src="image---offerup.png"
-          class="flex-grow-0 flex-shrink-0 w-full h-[175.14px] object-none"
+        <Image
+          src={offerup}
+          alt="Offer up"
+          class="flex-grow-0 flex-shrink-0 w-full "
         />
       </div>
       <p class="flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]">
@@ -95,7 +101,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
           <div
             class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#00b2ff]"
           >
-            <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left text-[#020202]">
+            <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left text-[#020202] font-['Playfair_Display']">
               Pros:
             </p>
             <p
@@ -109,7 +115,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
                 >Can negotiate the price.</span
               >
             </p>
-            <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left text-[#020202]">
+            <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left text-[#020202] font-['Playfair_Display']">
               Cons:
             </p>
             <p
@@ -128,10 +134,10 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
         >
           <span
             class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
-            >Due to the l</span
+            >Due to the </span
           ><span
             class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold italic text-left text-[#020202]"
-            >imited amount of time</span
+            >limited amount of time</span
           ><span
             class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
             >, we didn’t develop app-based platform. Instead, we focused on </span
@@ -152,13 +158,13 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
       </div>
     </div>
     <div
-      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6"
+      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6 lg:px-[10%] "
     >
       <div
         class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
       >
         <p
-          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]  font-['Playfair_Display']"
         >
           Second interview sparked more ideas
         </p>
@@ -183,7 +189,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
               class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#00b2ff]"
             >
               <p
-                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]  font-['Playfair_Display']"
               >
                 How is/was your experience getting rid of the unwanted items?
               </p>
@@ -206,7 +212,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
               class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#00b2ff]"
             >
               <p
-                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]  font-['Playfair_Display']"
               >
                 Are you planning to move anytime soon?
               </p>
@@ -247,9 +253,10 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
             out.</span
           >
         </p>
-        <img
-          src="img---user-persona-1.png"
-          class="self-stretch flex-grow-0 flex-shrink-0 h-[183.25px] object-none"
+        <Image
+          src={persona}
+          alt="Customer Persona"
+          class="self-stretch flex-grow-0 flex-shrink-0 "
         />
       </div>
       <div
@@ -283,20 +290,21 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
             >Simplify and secure the transaction process.</span
           >
         </p>
-        <img
-          src="image---customer-journey-2.png"
-          class="self-stretch flex-grow-0 flex-shrink-0 h-[204.36px] object-cover"
+        <Image
+          src={customerJourney}
+          alt="Customer Journey"
+          class="self-stretch flex-grow-0 flex-shrink-0 "
         />
       </div>
     </div>
     <div
-      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6"
+      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6 lg:px-[10%] "
     >
       <div
         class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
       >
         <p
-          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left  font-['Playfair_Display'] text-[#020202]"
         >
           Customer journey
         </p>
@@ -309,23 +317,24 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
           broad and targeted perspective.
         </p>
       </div>
-      <img
-        src="image---customer-journey-1.png"
-        class="flex-grow-0 flex-shrink-0 w-full h-[330.1px] object-cover"
-      />
+      <Image
+          src={customerJourney2}
+          alt="Customer Journey 2"
+          class="self-stretch flex-grow-0 flex-shrink-0 "
+        />
     </div>
     <div
-      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6"
+      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6 lg:px-[10%] "
     >
       <div
         class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
       >
         <p class="self-stretch flex-grow-0 flex-shrink-0 w-full text-left">
           <span
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left text-[#5b3eff]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left  font-['Playfair_Display']  text-[#5b3eff]"
             >BRAINSTORMING</span
           ><br /><span
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
             >Flowchart of BrightWaste</span
           >
         </p>
@@ -354,7 +363,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
           <div
             class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#00b2ff]"
           >
-            <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left text-[#020202]">
+            <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left  font-['Playfair_Display'] text-[#020202]">
               Register an account
             </p>
             <p
@@ -371,7 +380,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
           <div
             class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#00b2ff]"
           >
-            <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left text-[#020202]">
+            <p class="flex-grow-0 flex-shrink-0 text-xl font-bold  font-['Playfair_Display'] text-left text-[#020202]">
               Landing page
             </p>
             <p
@@ -388,7 +397,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
           <div
             class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#00b2ff]"
           >
-            <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left text-[#020202]">
+            <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left  font-['Playfair_Display'] text-[#020202]">
               Deal starts
             </p>
             <p
@@ -405,7 +414,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
             class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#00b2ff]"
           >
             <p
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold  font-['Playfair_Display'] text-left text-[#020202]"
             >
               Few options to start an offer
             </p>
@@ -424,7 +433,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
             class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#00b2ff]"
           >
             <p
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left  font-['Playfair_Display'] text-[#020202]"
             >
               Two cases here
             </p>
@@ -449,7 +458,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
             class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#00b2ff]"
           >
             <p
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold  font-['Playfair_Display'] text-left text-[#020202]"
             >
               Store decides
             </p>
@@ -467,7 +476,7 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
             class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#00b2ff]"
           >
             <p
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+              class="self-stretch  font-['Playfair_Display'] flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
             >
               Resubmit or done?
             </p>
@@ -500,9 +509,10 @@ import redRoutes from "../../assets/grocery-go-red-routes.png";
           fail to respond within the 3-day period. We should also account for public holidays when
           the store may be closed.
         </p>
-        <img
-          src="image---flowchart-2.png"
-          class="flex-grow-0 flex-shrink-0 w-full h-[274.25px] object-cover"
+        <Image
+          src={flowchart}
+          alt="flowchart"
+          class="self-stretch flex-grow-0 flex-shrink-0 "
         />
       </div>
     </div>

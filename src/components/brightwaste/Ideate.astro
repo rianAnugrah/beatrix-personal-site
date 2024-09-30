@@ -1,19 +1,31 @@
-
+---
+import { Image } from "astro:assets";
+import ourFeature from "../../assets/brightwaste/brightwaste-our-feature.png";
+import colorChoices from "../../assets/brightwaste/brightwaste-color-choices.png";
+import ui1 from "../../assets/brightwaste/brightwaste-ui-1.png";
+import ui2 from "../../assets/brightwaste/brightwaste-ui-2.png";
+import productUpload from "../../assets/brightwaste/brightwaste-product-upload.png";
+import productUpload2 from "../../assets/brightwaste/brightwaste-product-upload-2.png";
+import productUpload3 from "../../assets/brightwaste/brightwaste-product-upload-3.png";
+import videoLanding from "../../assets/brightwaste/video-brightswate-landing.gif"
+import videoOffer from "../../assets/brightwaste/video-brightswate-offer.gif"
+import videoStore from "../../assets/brightwaste/video-brightswate-store.gif"
+---
 
 
     <!-- IDEATION -->
     <div
-      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6"
+      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6  lg:px-[10%]"
     >
       <div
         class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
       >
         <p class="self-stretch flex-grow-0 flex-shrink-0 w-full text-left">
           <span
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left text-[#5b3eff]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold  font-['Playfair_Display'] text-left text-[#5b3eff]"
             >IDEATION</span
           ><br /><span
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
             >The features</span
           >
         </p>
@@ -27,7 +39,7 @@
         <div
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
-          <p class="flex-grow-0 flex-shrink-0 text-xl font-semibold text-left text-[#020202]">
+          <p class="flex-grow-0 flex-shrink-0 text-xl font-semibold  text-left text-[#020202]">
             ➡️ Safe transaction
           </p>
           <p
@@ -41,7 +53,7 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  text-left text-[#020202]"
           >
             ➡️ Sharpen your creativity plus earn $$!
           </p>
@@ -56,29 +68,31 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  text-left text-[#020202]"
           >
             ➡️ And more... check below
           </p>
         </div>
       </div>
-      <img
-        src="image---our-features-1.png"
-        class="flex-grow-0 flex-shrink-0 w-full h-[173.16px] object-cover"
-      />
+      <Image
+      src={ourFeature}
+      alt="Our Feature"
+      class="self-stretch flex-grow-0 flex-shrink-0 "
+    />
+    </div>
     </div>
     <div
-      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6"
+      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6  lg:px-[10%]"
     >
       <div
         class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
       >
         <p class="self-stretch flex-grow-0 flex-shrink-0 w-full text-left">
           <span
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left text-[#5b3eff]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold  font-['Playfair_Display'] text-left text-[#5b3eff]"
             >UI FOCUS</span
           ><br /><span
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
             >The design system</span
           >
         </p>
@@ -90,7 +104,7 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  text-left text-[#020202]"
           >
             Color choices:
           </p>
@@ -98,14 +112,14 @@
             class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
           >
             <span
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold  text-left text-[#020202]"
               >Blue and green:</span
             ><span
               class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
             >
               These colors reflect our logo and represent earth in general.</span
             ><br /><span
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold  text-left text-[#020202]"
               >Black (#323232):</span
             ><span
               class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
@@ -118,7 +132,7 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  text-left text-[#020202]"
           >
             The button comes in different variations to make it easier to distinguish between
             different functionalities.
@@ -127,7 +141,7 @@
             class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
           >
             <span
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold  text-left text-[#020202]"
               >Regular Shape</span
             ><span
               class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
@@ -135,14 +149,14 @@
               (Join Us, Find Out): This is the primary button style, used for navigation bars and
               landing pages. It serves as a clear Call to Action (CTA).</span
             ><br /><span
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold  text-left text-[#020202]"
               >Curved Shape</span
             ><span
               class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
             >
               (Sign Up): Used exclusively for the signup experience, prioritizing aesthetics.</span
             ><br /><span
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold  text-left text-[#020202]"
               >Gradient Button:</span
             ><span
               class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
@@ -152,13 +166,14 @@
           </p>
         </div>
       </div>
-      <img
-        src="image---color-choices-1.png"
-        class="flex-grow-0 flex-shrink-0 w-full h-[209.35px] object-cover"
-      />
+      <Image
+      src={colorChoices}
+      alt="Color Choices"
+      class="self-stretch flex-grow-0 flex-shrink-0 "
+    />
     </div>
     <div
-      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6"
+      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6  lg:px-[10%]"
     >
       <div
         class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-4"
@@ -168,10 +183,10 @@
         >
           <p class="self-stretch flex-grow-0 flex-shrink-0 w-full text-left">
             <span
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left text-[#5b3eff]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold  font-['Playfair_Display'] text-left text-[#5b3eff]"
               >UI AND CONTENT FOCUS</span
             ><br /><span
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
               >Focusing to add value to landing page is a key</span
             >
           </p>
@@ -199,7 +214,7 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  text-left text-[#020202]"
           >
             Rough draft (2 options):
           </p>
@@ -233,7 +248,7 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  text-left text-[#020202]"
           >
             Final draft for home page text:
           </p>
@@ -241,7 +256,7 @@
         <div
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5 p-4 rounded-[15px] bg-[#aae5fe]"
         >
-          <p class="flex-grow-0 flex-shrink-0 text-xl font-bold text-left text-[#020202]">
+          <p class="flex-grow-0 flex-shrink-0 text-xl font-bold  font-['Playfair_Display'] text-left text-[#020202]">
             Get higher value...
           </p>
           <p
@@ -259,7 +274,7 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  text-left text-[#020202]"
           >
             The navbar explanations:
           </p>
@@ -274,14 +289,14 @@
               class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
             >
               <span
-                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold text-left text-[#020202]"
+                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold  text-left text-[#020202]"
                 >How It Works:</span
               ><span
                 class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
               >
                 This section explains the process step-by-step.</span
               ><br /><br /><span
-                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold text-left text-[#020202]"
+                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold  text-left text-[#020202]"
                 >All Items (upcoming feature):</span
               ><span
                 class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
@@ -289,7 +304,7 @@
                 Discover a curated selection of popular items available in various locations. Enable
                 your location to view items near you.</span
               ><br /><br /><span
-                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold text-left text-[#020202]"
+                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold  text-left text-[#020202]"
                 >DIY Blog:</span
               ><span
                 class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
@@ -299,14 +314,14 @@
             </p>
           </div>
         </div>
-        <img
-          src="image---ui-1-1.png"
-          class="flex-grow-0 flex-shrink-0 w-full h-[175.66px] object-none"
-        />
+        <Image
+        src={ui1}
+        alt="UI 1"
+        class="self-stretch flex-grow-0 flex-shrink-0 " />
       </div>
     </div>
     <div
-      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6"
+      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6  lg:px-[10%]"
     >
       <div
         class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-4"
@@ -315,7 +330,7 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
           >
             Explain the steps
           </p>
@@ -342,7 +357,7 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold italic text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  italic text-left text-[#020202]"
           >
             I want to create a flow that looks like a marketplace so users or audiences can easily
             pick up the idea or how the sales work. The additional icons represent the step they
@@ -350,13 +365,13 @@
           </p>
         </div>
       </div>
-      <img
-        src="image---ui-2-1.png"
-        class="flex-grow-0 flex-shrink-0 w-full h-[143.83px] object-cover"
-      />
+      <Image
+      src={ui2}
+      alt="UI 2"
+      class="self-stretch flex-grow-0 flex-shrink-0 " />
     </div>
     <div
-      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6"
+      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6  lg:px-[10%]"
     >
       <div
         class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-4"
@@ -365,7 +380,7 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
           >
             Quick video of the landing page
           </p>
@@ -386,10 +401,15 @@
           </div>
         </div>
       </div>
-      <div class="flex-grow-0 flex-shrink-0 w-full h-[143.83px] bg-[#c4c4c4]"></div>
+      <Image 
+      src={videoLanding} 
+      alt="Grocery Go Demo" 
+      class="w-full h-auto" 
+      onload="document.getElementById('spinner').style.display='none';"
+    />
     </div>
     <div
-      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6"
+      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6  lg:px-[10%]"
     >
       <div
         class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-4"
@@ -398,7 +418,7 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display']  text-left text-[#020202]"
           >
             Make offer in few steps...
           </p>
@@ -419,10 +439,15 @@
           </div>
         </div>
       </div>
-      <div class="flex-grow-0 flex-shrink-0 w-full h-[143.83px] bg-[#c4c4c4]"></div>
+      <Image 
+      src={videoOffer} 
+      alt="Grocery Go Demo" 
+      class="w-full h-auto" 
+      onload="document.getElementById('spinner').style.display='none';"
+    />
     </div>
     <div
-      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6"
+      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6  lg:px-[10%]"
     >
       <div
         class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-4"
@@ -431,12 +456,12 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
           >
             E-commerce style in our website
           </p>
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#5b3eff]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold  font-['Playfair_Display'] text-left text-[#5b3eff]"
           >
             Iteration 1
           </p>
@@ -462,13 +487,14 @@
           </div>
         </div>
       </div>
-      <img
-        src="image---product-upload-form-v1-1.png"
-        class="flex-grow-0 flex-shrink-0 w-full h-[205.3px] object-cover"
-      />
+      <Image
+      src={productUpload}
+      alt="Product upload"
+      class="self-stretch flex-grow-0 flex-shrink-0 " />
+      </div>
     </div>
     <div
-      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6"
+      class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6  lg:px-[10%]"
     >
       <div
         class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-4"
@@ -477,12 +503,12 @@
           class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
           >
             However, concern happened...
           </p>
           <p
-            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#5b3eff]"
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold  font-['Playfair_Display'] text-left text-[#5b3eff]"
           >
             Iteration 2
           </p>
@@ -513,7 +539,7 @@
         class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-full relative gap-4"
       >
         <p
-          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  text-left text-[#020202]"
         >
           ➡️ I implemented a tracker button to monitor user page activity.
         </p>
@@ -524,16 +550,16 @@
           and 'Get Choices,' which provides options for selling directly to the store or upcycling
           and selling later.
         </p>
-        <img
-          src="image---product-upload-form-v2-1-2.png"
-          class="flex-grow-0 flex-shrink-0 w-full h-[205.3px] object-cover"
-        />
+        <Image
+      src={productUpload2}
+      alt="Product upload2"
+      class="self-stretch flex-grow-0 flex-shrink-0 " />
       </div>
       <div
         class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-full relative gap-4"
       >
         <p
-          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  text-left text-[#020202]"
         >
           ➡️ Next: Select your preferred stores.
         </p>
@@ -543,13 +569,17 @@
           Once users complete the form, the system will utilize the Google Maps API to determine the
           nearest store to their location.
         </p>
-        <div class="flex-grow-0 flex-shrink-0 w-full h-[143.83px] bg-[#c4c4c4]"></div>
-      </div>
+        <Image 
+      src={videoStore} 
+      alt="Brightwaste Store" 
+      class="w-full h-auto" 
+      onload="document.getElementById('spinner').style.display='none';"
+    />
       <div
         class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-full relative gap-4"
       >
         <p
-          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
         >
           ➡️ To conclude...
         </p>
@@ -565,7 +595,7 @@
             class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#4d2eff]"
           >
             <p
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold  font-['Playfair_Display'] text-left text-[#020202]"
             >
               First option: Describe the item as details as possible
             </p>
@@ -584,12 +614,12 @@
             class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#4d2eff]"
           >
             <p
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold  font-['Playfair_Display'] text-left text-[#020202]"
             >
               Second, get two choices...
             </p>
             <p
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold  font-['Playfair_Display'] text-left text-[#020202]"
             >
               First option:
             </p>
@@ -600,7 +630,7 @@
               lower offer price.
             </p>
             <p
-              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+              class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold  font-['Playfair_Display'] text-left text-[#020202]"
             >
               Second option:
             </p>
@@ -608,7 +638,7 @@
               class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
             >
               <span
-                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold text-left text-[#020202]"
+                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold  text-left text-[#020202]"
                 >Ready to sell?</span
               ><br /><span
                 class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
@@ -619,7 +649,7 @@
               class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
             >
               <span
-                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold text-left text-[#020202]"
+                class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base font-semibold  text-left text-[#020202]"
                 >Need more time?</span
               ><br /><span
                 class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
@@ -635,9 +665,9 @@
           </div>
         </div>
       </div>
-      <img
-        src="image---product-upload-form-v2-1.png"
-        class="flex-grow-0 flex-shrink-0 w-full h-[205.3px] object-cover"
-      />
+      <Image
+      src={productUpload3}
+      alt="Product upload Form"
+      class="self-stretch flex-grow-0 flex-shrink-0 " />
     </div>
   </div>
