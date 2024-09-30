@@ -1,8 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import mockup1 from "../../assets/grocery-go-mockup-1.png";
-import mockup2 from "../../assets/grocery-go-mockup-3.png";
-import vid2 from "../../assets/vid-2.gif"
+
+import mockup from "../../assets/brightwaste/brightwaste-mockup.png";
 
 ---
 
@@ -10,38 +9,29 @@ import vid2 from "../../assets/vid-2.gif"
 
 <!-- PROTOTYPE -->
 
-<div class="flex-grow-0 flex-shrink-0 w-full h-[243.28px] relative bg-[#7ac4b6]">
-  <img
-    src="image---homepage-1.png"
-    class="w-full h-[207px] absolute left-[15px] top-[17px] rounded-[10px] object-none"
-  /><img
-    src="get-offer---describe.png"
-    class="w-full h-[206px] absolute left-32 top-[17px] rounded-[10px] object-none"
-  />
-  <div class="w-full h-[274px] absolute left-[852px] top-[47px] rounded-[15px]"></div>
-  <img
-    src="get-offer---get-choices-1.png"
-    class="w-full h-[115px] absolute left-[236px] top-[18px] rounded-[10px] object-cover"
-  /><img
-    src="buyer---all-items-1.png"
-    class="w-full h-[60px] absolute left-[236px] top-[143px] rounded-[10px] object-cover"
-  />
-</div>
+
+  <Image
+  src={mockup}
+  alt="Our Feature"
+  class="self-stretch flex-grow-0 flex-shrink-0 "
+  id="prototype"
+/>
+
 <div
-  class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6"
+  class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6 lg:px-[10%]"
 >
   <div
     class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-4"
   >
     <div
-      class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
+      class="flex flex-col  justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
     >
       <p class="self-stretch flex-grow-0 flex-shrink-0 w-full text-left">
         <span
-          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left text-[#5b3eff]"
+          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold  font-['Playfair_Display'] text-left text-[#5b3eff]"
           >MULTITASKING</span
         ><br /><span
-          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+          class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl  font-['Playfair_Display'] font-semibold text-left text-[#020202]"
           >Learn as a designer and developer!</span
         >
       </p>
@@ -60,21 +50,25 @@ import vid2 from "../../assets/vid-2.gif"
         </p>
       </div>
     </div>
-    <div
-      class="flex justify-center items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5 p-4 rounded-[15px] bg-[#4d2eff]"
-      style="box-shadow: 4px 4px 2.799999952316284px 0 rgba(2,2,2,0.25);"
-    >
-      <p class="flex-grow-0 flex-shrink-0 text-lg font-bold text-center text-[#fff2ef]">
-        View prototype
-      </p>
-    </div>
-    <div
-      class="flex justify-center items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5 p-4 rounded-[15px] bg-[#e83b5b]"
-      style="box-shadow: 4px 4px 2.799999952316284px 0 rgba(2,2,2,0.25);"
-    >
-      <p class="flex-grow-0 flex-shrink-0 text-lg font-bold text-center text-[#fff2ef]">
-        View development
-      </p>
+    <div class="flex flex-col lg:flex-row w-full gap-6 lg:gap-[10%] justify-center lg:px-[10%]">
+
+
+      <div
+        class="flex justify-center items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5 p-4 rounded-[15px] bg-[#4d2eff]"
+        style="box-shadow: 4px 4px 2.799999952316284px 0 rgba(2,2,2,0.25);"
+      >
+        <p class="flex-grow-0 flex-shrink-0 text-lg font-bold  font-['Playfair_Display'] text-center text-[#fff2ef]">
+          View prototype
+        </p>
+      </div>
+      <div
+        class="flex justify-center items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5 p-4 rounded-[15px] bg-[#e83b5b]"
+        style="box-shadow: 4px 4px 2.799999952316284px 0 rgba(2,2,2,0.25);"
+      >
+        <p class="flex-grow-0 flex-shrink-0 text-lg font-bold  font-['Playfair_Display'] text-center text-[#fff2ef]">
+          View development
+        </p>
+      </div>
     </div>
   </div>
 </div>

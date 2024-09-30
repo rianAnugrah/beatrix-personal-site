@@ -1,10 +1,16 @@
+---
+import { Image } from "astro:assets";
 
+import flowchart2 from "../../assets/brightwaste/brightwaste-flowchart-2.png";
+
+---
 
 <!-- TEST -->
 
 
 <div
-class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6"
+class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6 lg:px-[10%]"
+id="test"
 >
 <div
   class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-4"
@@ -14,10 +20,10 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
   >
     <p class="self-stretch flex-grow-0 flex-shrink-0 w-full text-left">
       <span
-        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left text-[#5b3eff]"
+        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold  font-['Playfair_Display'] text-left text-[#5b3eff]"
         >IMPACT</span
       ><br /><span
-        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
         >Reviews about the website (in general) and campaign video</span
       >
     </p>
@@ -41,7 +47,7 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
 <div
   class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-full relative gap-4"
 >
-  <p class="flex-grow-0 flex-shrink-0 w-full text-2xl font-bold text-left text-[#020202]">
+  <p class="flex-grow-0 flex-shrink-0 w-full text-2xl font-bold  font-['Playfair_Display'] text-left text-[#020202]">
     So stunning!
   </p>
   <p class="flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]">
@@ -58,7 +64,7 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
 <div
   class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-full relative gap-4"
 >
-  <p class="flex-grow-0 flex-shrink-0 w-full text-2xl font-bold text-left text-[#020202]">
+  <p class="flex-grow-0 flex-shrink-0 w-full text-2xl font-bold  font-['Playfair_Display'] text-left text-[#020202]">
     So thorough!
   </p>
   <p class="flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]">
@@ -75,7 +81,7 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
 <div
   class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-full relative gap-4"
 >
-  <p class="flex-grow-0 flex-shrink-0 w-full text-2xl font-bold text-left text-[#020202]">
+  <p class="flex-grow-0 flex-shrink-0 w-full text-2xl font-bold  font-['Playfair_Display'] text-left text-[#020202]">
     Simple design!
   </p>
   <p class="flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]">
@@ -91,7 +97,7 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
 </div>
 </div>
 <div
-class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6"
+class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-6 p-6 lg:px-[10%]"
 >
 <div
   class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-4"
@@ -101,10 +107,10 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
   >
     <p class="self-stretch flex-grow-0 flex-shrink-0 w-full text-left">
       <span
-        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left text-[#5b3eff]"
+        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold  font-['Playfair_Display'] text-left text-[#5b3eff]"
         >THE END?</span
       ><br /><span
-        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
         >We earned best results but...</span
       >
     </p>
@@ -145,17 +151,22 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
     </div>
   </div>
 </div>
-<img
-  src="image---flowchart.png"
-  class="flex-grow-0 flex-shrink-0 w-full h-[250.54px] object-none"
+<Image
+src={flowchart2}
+alt="Our Feature"
+class="self-stretch flex-grow-0 flex-shrink-0 "
 />
-<div class="flex-grow-0 flex-shrink-0 w-full h-[250.54px] bg-[#c4c4c4]"></div>
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/NcczyOx6WaQ" 
+title="Brightwaste" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 </div>
 
 
 <!-- WHAT WE LEARNED -->
 <div
-class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6"
+class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6 lg:px-[10%]"
 >
 <div
   class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-4"
@@ -165,10 +176,10 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
   >
     <p class="self-stretch flex-grow-0 flex-shrink-0 w-full text-left">
       <span
-        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left text-[#5b3eff]"
+        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold  font-['Playfair_Display'] text-left text-[#5b3eff]"
         >WHAT WE LEARNED</span
       ><br /><span
-        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
         >We learned...</span
       >
     </p>
@@ -180,7 +191,7 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
       class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#4d2eff]"
     >
       <p
-        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold  font-['Playfair_Display'] text-left text-[#020202]"
       >
         Intervention is important
       </p>
@@ -201,7 +212,7 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
       class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#4d2eff]"
     >
       <p
-        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold  font-['Playfair_Display'] text-left text-[#020202]"
       >
         Finding idea is hard but…
       </p>
@@ -220,7 +231,7 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
       class="flex flex-col justify-start items-start flex-grow relative gap-2.5 p-4 rounded-[15px] border-[1.5px] border-[#4d2eff]"
     >
       <p
-        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold text-left text-[#020202]"
+        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-bold  font-['Playfair_Display'] text-left text-[#020202]"
       >
         It's impossible to solve all problems within short amount of time
       </p>
@@ -236,7 +247,7 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
 </div>
 </div>
 <div
-class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6"
+class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-6 p-6 lg:px-[10%]"
 >
 <div
   class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-4"
@@ -246,10 +257,10 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
   >
     <p class="self-stretch flex-grow-0 flex-shrink-0 w-full text-left">
       <span
-        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold text-left text-[#5b3eff]"
+        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-lg font-bold  font-['Playfair_Display'] text-left text-[#5b3eff]"
         >FUTURE SAYS...</span
       ><br /><span
-        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold text-left text-[#020202]"
+        class="self-stretch flex-grow-0 flex-shrink-0 w-full text-xl font-semibold  font-['Playfair_Display'] text-left text-[#020202]"
         >What’s next?</span
       >
     </p>
@@ -257,38 +268,39 @@ class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-sh
   <div
     class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-8"
   >
-    <div
-      class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4"
+    <ul
+    style="list-style-type: disc;"
+      class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4 pl-6"
     >
-      <p
+      <li
         class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
       >
         Contact potential partners or investors that want to work with us to develop this.
-      </p>
-      <p
+      </li>
+      <li
         class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
       >
         Keep iterating the design concept and add important features, such as, shipping cost and
         store admin pages.
-      </p>
-      <p
+      </li>
+      <li
         class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
       >
         We may continue the project early next year, after securing additional funding and
         recruiting more developers.
-      </p>
-      <p
+      </li>
+      <li
         class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
       >
         Expand the platform to include features that help users discover local workshops
         providing innovative approaches to reducing household waste.
-      </p>
-      <p
+      </li>
+      <li
         class="self-stretch flex-grow-0 flex-shrink-0 w-full text-base text-left text-[#020202]"
       >
         Resolve the problem with shipping costs.
-      </p>
-    </div>
+      </li>
+    </ul>
   </div>
 </div>
 
