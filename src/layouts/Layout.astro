@@ -10,7 +10,7 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <!-- Google Fonts: Playfair Display -->
@@ -27,6 +27,31 @@ const { title } = Astro.props;
       .font-playfair {
         font-family: 'Playfair Display', serif !important;
       }
+
+      html {
+        zoom: 1;
+      }
+
+      /*==== FHD/UHD (6:9) Responsive Support ====*/
+      @media screen and (min-width: 1800px) {
+        body, html {font-size: 2.5vh;}
+      }
+
+      /*==== FHD/2K (4:3) Responsive Support ====*/
+      @media screen and (min-width: 1900px) and (min-height: 1400px) {
+        body, html {font-size: 1.5vh;}
+      }
+
+      /*==== FHD/2K (5:3) Responsive Support ====*/
+      @media screen and (min-width: 1900px) and (min-height: 2000px) {
+        body, html {font-size: 1.25vh;}
+      }
+
+      /*==== 2K/4K (6:9) Responsive Support ====*/
+      @media screen and (min-width: 1990px) {
+        body, html {font-size: 2vh;}
+      }
+
     </style>
   </head>
   <body class="text-[#020202] bg-[#FFF2EF] sm:bg-white" style="font-family: 'Open Sans', sans-serif;">
