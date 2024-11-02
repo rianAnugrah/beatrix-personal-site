@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import {Image} from "astro:assets";
 
 import scMobile from "../../assets/Container - Savicore-m.png"; // Make sure to add your image to this path
 import scDesktop from "../../assets/Container - Savicore.png"; // Make sure to add your image to this path
@@ -8,58 +8,63 @@ import Heading from "../Heading.astro";
 import Pile from "../Pile.astro";
 
 const title = "Savicore";
-const desc  = `Optimize the checkout, dashboard, and group coaching registration process to target 500 subscribers per month.`
+const desc = `Optimize the checkout, dashboard, and group coaching registration process to target 500 subscribers per month.`
 ---
 
-<section class="relative flex flex-col w-full h-full group">
-  <Image
-    src={scDesktop}
-    alt="Savicore image-co"
-    class="hidden xl:block w-full h-full relative  z-[1] group-hover:scale-100 transition-all duration-500 ease-out"
-  />
+<section class="relative flex flex-col w-full lg:h-[30rem] xl:h-[46rem] bg-[#4424FF]  group">
+    <Image
+      src={scDesktop}
+      alt="Savicore image-co"
+      class="hidden xl:block w-auto mx-auto h-full relative   z-[1]  "
+    />
 
-  <Image
-    src={scTablet}
-    alt="Savicore image-co"
-    class="hidden lg:block xl:hidden w-full h-full"
-  />
+    <Image
+            src={scTablet}
+            alt="Savicore image-co"
+            class="hidden lg:block xl:hidden mx-auto relative w-auto h-full "
+    />
 
-  <Image
-    src={scMobile}
-    alt="Savicore image-co"
-    class="block lg:hidden w-full h-full"
-  />
+    <Image
+            src={scMobile}
+            alt="Savicore image-co"
+            class="block lg:hidden w-full h-full"
+    />
 
-  <div
-    class="hidden absolute w-2/5 right-0 top-1/2 z-[2] -translate-y-1/2 lg:flex flex-col items-start justify-center gap-4"
-  >
-    <div class="flex gap-4">
-      <Pile text="Web" />
-      <Pile text="Mobile" />
-      <Pile text="UX Design" />
-      <Pile text="UX Writing" />
+    <div
+            class="hidden absolute w-[28rem]  top-1/2 lg:left-[calc(50%_+_2rem)] xl:left-[calc(50%_+_8rem)] z-[2] -translate-y-1/2 lg:flex flex-col items-start justify-center gap-4 "
+    >
+        <div class="flex gap-4">
+            <Pile text="Web"/>
+            <Pile text="Mobile"/>
+            <Pile text="UX Design"/>
+            <Pile text="UX Writing"/>
+        </div>
+        <div class="text-white">
+            <h2
+                    class={`text-left w-full text-[2rem] xl:text-[4rem] font-bold leading-[5.5rem] text-white`}
+                    style="font-family: 'Playfair Display', serif;"
+            >
+                {title}
+            </h2>
+        </div>
+        <p class="italic w-full text-xl text-white pr-[20%]">
+            {desc}
+        </p>
     </div>
-    <div class="text-white">
-      <Heading text={title} />
-    </div>
-    <p class="italic w-full text-xl text-white pr-[20%]">
-      {desc}
-    </p>
-  </div>
-
-  <div
-  class="lg:hidden flex flex-col items-start p-[6%] gap-2 mb-[15%]"
->
-  <div class="flex gap-4 text-[#5B3EFF] font-playfair">
-    Web | Mobile | UX Design | UX Writing
-  </div>
-  <div class="text-left">
-    <Heading text={title} />
-  </div>
-  <p class="italic w-full text-xl text-left">
-    {desc}
-  </p>
-</div>
 
 
 </section>
+
+<div
+        class="lg:hidden flex flex-col items-start p-[6%] gap-2 mb-[15%]"
+>
+    <div class="flex gap-4 text-[#5B3EFF] font-playfair">
+        Web | Mobile | UX Design | UX Writing
+    </div>
+    <div class="text-left">
+        <Heading text={title}/>
+    </div>
+    <p class="italic w-full text-xl text-left">
+        {desc}
+    </p>
+</div>

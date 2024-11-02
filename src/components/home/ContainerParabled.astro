@@ -12,11 +12,11 @@ const desc1  = `First version of Savicore`
 const desc2  = `Revamp the entire learning platform website to attract users and encourage them to register for our coaching plans.`
 ---
 
-<section class="relative flex flex-col w-full h-full group">
+<section class="relative flex flex-col w-full lg:h-[30rem] xl:h-[46rem]  group bg-[#d8aba9]">
   <Image
     src={scDesktop}
     alt="Savicore image-co"
-    class="hidden xl:block w-full h-full  group-hover:scale-100 transition-all duration-500 ease-out"
+    class="hidden xl:block w-auto mx-auto h-full relative   z-[1]  "
   />
 
   <Image
@@ -32,7 +32,7 @@ const desc2  = `Revamp the entire learning platform website to attract users and
   />
 
   <div
-    class="hidden xl:pl-[4%] xl:pr-0 pl-0 pr-[6%] absolute w-2/5 right-0 xl:left-0 top-1/2 -translate-y-1/2 lg:flex flex-col items-start justify-center gap-4"
+    class="hidden absolute w-[24rem]  top-1/2 lg:left-[calc(50%_+_2rem)] xl:left-[calc(50%_-_34rem)]   z-[2] -translate-y-1/2 lg:flex flex-col items-start justify-center gap-4 "
   >
     <div class="flex gap-4">
       <Pile text="Web" />
@@ -41,7 +41,7 @@ const desc2  = `Revamp the entire learning platform website to attract users and
     <div class="">
       <Heading text={title} />
     </div>
-    <p class="font-bold font-playfair text-[1.75rem] w-full text-xl ">
+    <p class="font-bold font-playfair text-[1.75rem] w-full text-xl " style="font-family: 'Playfair Display', serif;">
       {desc1}
     </p>
     <p class="italic w-full text-xl ">
@@ -49,8 +49,11 @@ const desc2  = `Revamp the entire learning platform website to attract users and
     </p>
   </div>
 
-  <div
-  class="lg:hidden flex flex-col items-start p-[6%] gap-2 mb-[15%]"
+
+
+</section>
+<div
+    class="lg:hidden flex flex-col items-start p-[6%] gap-2 mb-[15%]"
 >
   <div class="flex gap-4 text-[#5B3EFF] font-playfair">
     Web | UX Writing
@@ -58,13 +61,10 @@ const desc2  = `Revamp the entire learning platform website to attract users and
   <div class="text-left">
     <Heading text={title} />
   </div>
-  <p class="font-bold font-playfair text-[1.75rem] w-full text-xl text-left">
+  <p class="font-bold font-playfair text-[1.75rem] w-full text-xl text-left" style="font-family: 'Playfair Display', serif;">
     {desc1}
   </p>
   <p class="italic w-full text-xl text-left">
     {desc2}
   </p>
 </div>
-
-
-</section>
