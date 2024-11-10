@@ -1,0 +1,179 @@
+---
+import Dropdown from "../Dropdown.astro";
+
+
+---
+
+
+<style>
+    /* Additional styles for the progress bar */
+    .progress-bar {
+        position: fixed;
+        
+        left: 0;
+        z-index: 20;
+        height: 4px;
+        background-color: #3B82F6; /* Tailwind's blue-500 */
+        transition: width 0.1s ease;
+    }
+</style>
+
+
+
+
+
+<div
+  class="fixed bottom-0 z-20 left-0 right-0 hidden md:flex justify-center items-center bg-white border-t border-gray-200 p-4"
+>
+  <a
+    href="#overview"
+    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-2"
+    data-target="overview">Overview</a
+  >
+  <a
+    href="#emphatize"
+    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-2"
+    data-target="emphatize">Empathize</a
+  >
+  <a
+    href="#define"
+    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-2"
+    data-target="define">Define</a
+  >
+  <a
+    href="#ideate"
+    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-2"
+    data-target="ideate">Ideate</a
+  >
+  <a
+    href="#prototype"
+    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-2"
+    data-target="prototype">Prototype</a
+  >
+  <a
+    href="#test"
+    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-2"
+    data-target="test">Test</a
+  >
+</div>
+
+<div
+  class="fixed bottom-0 z-20 left-0 right-0 flex md:hidden justify-center items-start bg-white border-t border-gray-200 p-4"
+>
+
+
+  <div class=" w-full relative">
+    <div   role="button" class="h-10 w-full text-left flex justify-between items-center" id="sectionButton">
+      <span>Overview</span>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" id="chevron-icon" class="h-5 w-5 transition-transform duration-300 chevron-icon absolute right-4 bottom-3" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+    </svg>
+    <div
+      tabindex="0"
+      id="dropdownMenu"
+      class="bg-base-100 flex flex-col  z-[1] w-screen -left-4 m-0  bottom-14 absolute border"
+    >
+      <a
+        href="#overview"
+        class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-4"
+        data-target="overview">Overview</a
+      >
+      <a
+        href="#emphatize"
+        class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-4"
+        data-target="emphatize">Empathize</a
+      >
+      <a
+        href="#define"
+        class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-4"
+        data-target="define">Define</a
+      >
+      <a
+        href="#ideate"
+        class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-4"
+        data-target="ideate">Ideate</a
+      >
+      <a
+        href="#prototype"
+        class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-4"
+        data-target="prototype">Prototype</a
+      >
+      <a
+        href="#test"
+        class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-4"
+        data-target="test">Test</a
+      >
+    </div>
+  </div>
+</div>
+
+
+<div class="progress-bar bottom-[72px] " id="progressBar"></div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll(".scroll-to-section");
+    const sectionButton = document.getElementById("sectionButton");
+
+    links.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute("data-target");
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+          // Update the sectionButton text
+          sectionButton.textContent = link.textContent;
+        }
+      });
+    });
+  });
+
+
+  window.onscroll = function() {
+    updateScrollProgress();
+};
+
+function updateScrollProgress() {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPosition = window.scrollY;
+    const scrollPercentage = (scrollPosition / totalHeight) * 100;
+
+    const progressBar = document.getElementById('progressBar');
+    progressBar.style.width = scrollPercentage + '%';
+}
+</script>
+
+
+
+<script>
+  const dropdownButton = document.getElementById('sectionButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+  const chevronIcon = document.getElementById('chevron-icon');
+
+  function closeDropdown() {
+      dropdownMenu.classList.add('hidden');
+      chevronIcon.classList.add('rotate-90');
+  }
+
+  dropdownButton.addEventListener('click', (event) => {
+      event.stopPropagation();
+      dropdownMenu.classList.toggle('hidden');
+      chevronIcon.classList.toggle('rotate-90');
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', closeDropdown);
+
+  // Close dropdown when clicking on a menu item
+  dropdownMenu.addEventListener('click', (event) => {
+      if (event.target.tagName === 'A') {
+          closeDropdown();
+      }
+  });
+
+  // Prevent dropdown from closing when clicking inside the menu
+  dropdownMenu.addEventListener('click', (event) => {
+      event.stopPropagation();
+  });
+</script>
