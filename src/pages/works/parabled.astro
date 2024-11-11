@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro'
 import Navbar from '../../components/Navbar.astro'
 import Footer from '../../components/Footer.astro'
-import Overview from '../../components/parabled/Overview.astro'
 import SectionNav from '../../components/parabled/SectionNav.astro'
 import Parabled_1_overview from "../../components/parabled/Parabled_1_overview.astro";
 import Parabled_2_emphatize from "../../components/parabled/Parabled_2_emphatize.astro";
@@ -14,16 +13,16 @@ import Parabled_6_test from "../../components/parabled/Parabled_6_test.astro";
 
 <Layout title="Hey, I'm Beatrix!">
     <Navbar />
-    <section class="flex overflow-hidden flex-col items-end mx-auto w-full bg-white max-w-[480px]">
+    <section class="flex overflow-hidden flex-col items-end mx-auto w-full max-w-[64rem]">
 
         <Parabled_1_overview />
-        <Parabled_2_emphatize />
-        <Parabled_3_define />
-        <Parabled_4_ideate />
-        <Parabled_5_prototype />
-        <Parabled_6_test />
+        <!--<Parabled_2_emphatize />-->
+        <!--<Parabled_3_define />-->
+        <!--<Parabled_4_ideate />-->
+        <!--<Parabled_5_prototype />-->
+        <!--<Parabled_6_test />-->
     </section>
     <Footer />
     <div class="block w-full h-20"></div>
-    <SectionNav />
+    <!--<SectionNav />-->
 </Layout>

@@ -1,180 +1,182 @@
 ---
-import { Image } from "astro:assets";
+import {Image} from "astro:assets";
 import logoImage from "../assets/Logo.png"; // Make sure to add your image to this path
 ---
 
 <nav
-  class="bg-[#FFF2EF] lg:bg-white flex items-center md:h-[10rem] px-6 lg:px-[5rem] py-6 "
+        class="bg-[#FFF2EF] lg:bg-white flex items-center md:h-[10rem] px-6 lg:px-[5rem] py-6 "
 >
-  <div class="flex justify-between h-16 items-center w-full ">
-    <div class="flex justify-between w-full">
-      <a href="/" class="flex-shrink-0 flex items-center">
-        <Image src={logoImage} alt="Logo" class="h-[2rem] md:h-[2.25rem] w-auto" />
-      </a>
-      <div
-        class="hidden  lg:flex lg:space-x-8 items-center"
-        style="font-family: 'Playfair Display', serif;"
-      >
-        <a
-          href="#"
-          class="text-lg text-[#020202] active:text-[#5B3EFF] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
-        >
-          Work
-        </a>
-        <a
-          href="#"
-          class="text-lg text-[#020202] active:text-[#5B3EFF] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
-        >
-          About
-        </a><a
-          href="#"
-          class="text-lg text-[#020202] active:text-[#5B3EFF] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
-        >
-          My Process
-        </a><a
-          href="#"
-          class="text-lg text-[#020202] active:text-[#5B3EFF] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
-        >
-          Achievement
-        </a>
-        <a href="https://www.linkedin.com/in/beatrixcendana/">
-          <svg
-
-            viewBox="0 0 18 19"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="fill-[#020202] active:fill-[#5B3EFF] w-[1.125rem] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
-          >
-            <path
-              d="M2.16335 4.83416C3.35813 4.83416 4.32669 3.86393 4.32669 2.66708C4.32669 1.47024 3.35813 0.5 2.16335 0.5C0.968562 0.5 0 1.47024 0 2.66708C0 3.86393 0.968562 4.83416 2.16335 4.83416Z"
-            ></path>
-            <path
-              d="M6.36967 6.47584V18.4988H10.0962V12.5532C10.0962 10.9843 10.3908 9.46499 12.3327 9.46499C14.2479 9.46499 14.2716 11.2587 14.2716 12.6522V18.4998H18.0001V11.9064C18.0001 8.66769 17.3041 6.17871 13.5251 6.17871C11.7108 6.17871 10.4947 7.17608 9.99733 8.11997H9.9469V6.47584H6.36967ZM0.296875 6.47584H4.02934V18.4988H0.296875V6.47584Z"
-            ></path>
-          </svg>
-        </a>
-
-        <a href="mailto:beatrixcdn@gmail.com?subject=Hello%20there">
-          <svg
-
-            viewBox="0 0 24 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="fill-[#020202] active:fill-[#5B3EFF] w-[1.125rem] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
-          >
-            <path
-              d="M4.20012 22.5C3.59512 22.5 3.07739 22.2799 2.64692 21.8396C2.21646 21.3994 2.00086 20.8695 2.00012 20.25V6.75C2.00012 6.13125 2.21572 5.60175 2.64692 5.1615C3.07812 4.72125 3.59586 4.50075 4.20012 4.5H21.8001C22.4051 4.5 22.9232 4.7205 23.3544 5.1615C23.7856 5.6025 24.0009 6.132 24.0001 6.75V20.25C24.0001 20.8687 23.7849 21.3986 23.3544 21.8396C22.924 22.2806 22.4059 22.5007 21.8001 22.5H4.20012ZM13.0001 14.625L4.20012 9V20.25H21.8001V9L13.0001 14.625ZM13.0001 12.375L21.8001 6.75H4.20012L13.0001 12.375ZM4.20012 9V6.75V20.25V9Z"
-            ></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-    <div class=" flex items-center lg:hidden">
-      <div class="drawer drawer-end">
-        <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content">
-          <!-- Page content here -->
-          <label for="my-drawer-4" class="drawer-button"
-            ><svg
-              width="34"
-              height="34"
-              viewBox="0 0 34 34"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M28.3334 9.9165H5.66669M28.3334 16.9998H5.66669M28.3334 24.0832H5.66669"
-                stroke="#5B3EFF"
-                stroke-width="2.5"
-                stroke-linecap="round"></path>
-            </svg>
-          </label>
-        </div>
-        <div
-          class="drawer-side z-20"
-          style="font-family: 'Playfair Display', serif;"
-        >
-          <label
-            for="my-drawer-4"
-            aria-label="close sidebar"
-            class="drawer-overlay"></label>
-          <ul
-            class="menu bg-[#FFF2EF] lg:bg-white  w-full p-0 text-[#020202]"
-          >
+    <div class="flex justify-between h-16 items-center w-full ">
+        <div class="flex justify-between w-full">
+            <a href="/" class="flex-shrink-0 flex items-center">
+                <Image src={logoImage} alt="Logo" class="h-[2rem] md:h-[2.25rem] w-auto"/>
+            </a>
             <div
-              class=" p-6 py-10 flex-col justify-start items-start gap-2.5 inline-flex"
+                    class="hidden  lg:flex lg:space-x-8 items-center"
+                    style="font-family: 'Playfair Display', serif;"
             >
-              <div
-                class="self-stretch justify-between items-center inline-flex"
-              >
-                <a href="/" class="flex-shrink-0 flex items-center">
-                  <Image src={logoImage} alt="Logo" class="h-[2.25rem] w-auto" />
-                </a>
-                
-                <label for="my-drawer-4" class="drawer-button"
-                ><svg
-                  width="34"
-                  height="34"
-                  viewBox="0 0 34 34"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <a
+                        href="#"
+                        class="text-lg text-[#020202] active:text-[#5B3EFF] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
                 >
-                  <path
-                    d="M28.3334 9.9165H5.66669M28.3334 16.9998H5.66669M28.3334 24.0832H5.66669"
-                    stroke="#5B3EFF"
-                    stroke-width="2.5"
-                    stroke-linecap="round"></path>
-                </svg>
-              </label>
-               
-              </div>
+                    Work
+                </a>
+                <a
+                        href="#"
+                        class="text-lg text-[#020202] active:text-[#5B3EFF] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
+                >
+                    About
+                </a><a
+                    href="#"
+                    class="text-lg text-[#020202] active:text-[#5B3EFF] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
+            >
+                My Process
+            </a><a
+                    href="#"
+                    class="text-lg text-[#020202] active:text-[#5B3EFF] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
+            >
+                Achievement
+            </a>
+                <a href="https://www.linkedin.com/in/beatrixcendana/">
+                    <svg
+
+                            viewBox="0 0 18 19"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-[#020202] active:fill-[#5B3EFF] w-[1.125rem] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
+                    >
+                        <path
+                                d="M2.16335 4.83416C3.35813 4.83416 4.32669 3.86393 4.32669 2.66708C4.32669 1.47024 3.35813 0.5 2.16335 0.5C0.968562 0.5 0 1.47024 0 2.66708C0 3.86393 0.968562 4.83416 2.16335 4.83416Z"
+                        ></path>
+                        <path
+                                d="M6.36967 6.47584V18.4988H10.0962V12.5532C10.0962 10.9843 10.3908 9.46499 12.3327 9.46499C14.2479 9.46499 14.2716 11.2587 14.2716 12.6522V18.4998H18.0001V11.9064C18.0001 8.66769 17.3041 6.17871 13.5251 6.17871C11.7108 6.17871 10.4947 7.17608 9.99733 8.11997H9.9469V6.47584H6.36967ZM0.296875 6.47584H4.02934V18.4988H0.296875V6.47584Z"
+                        ></path>
+                    </svg>
+                </a>
+
+                <a href="mailto:beatrixcdn@gmail.com?subject=Hello%20there">
+                    <svg
+
+                            viewBox="0 0 24 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-[#020202] active:fill-[#5B3EFF] w-[1.125rem] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
+                    >
+                        <path
+                                d="M4.20012 22.5C3.59512 22.5 3.07739 22.2799 2.64692 21.8396C2.21646 21.3994 2.00086 20.8695 2.00012 20.25V6.75C2.00012 6.13125 2.21572 5.60175 2.64692 5.1615C3.07812 4.72125 3.59586 4.50075 4.20012 4.5H21.8001C22.4051 4.5 22.9232 4.7205 23.3544 5.1615C23.7856 5.6025 24.0009 6.132 24.0001 6.75V20.25C24.0001 20.8687 23.7849 21.3986 23.3544 21.8396C22.924 22.2806 22.4059 22.5007 21.8001 22.5H4.20012ZM13.0001 14.625L4.20012 9V20.25H21.8001V9L13.0001 14.625ZM13.0001 12.375L21.8001 6.75H4.20012L13.0001 12.375ZM4.20012 9V6.75V20.25V9Z"
+                        ></path>
+                    </svg>
+                </a>
             </div>
-            <!-- Sidebar content here -->
-            <li>
-              <a
-                href="/works/savicore"
-                class="hover:bg-[#EBDBF1] h-[3.5rem] flex items-center justify-center px-6 py-4 rounded-none"
-                >Work</a
-              >
-            </li>
-            <li>
-              <a
-                href="/about"
-                class="hover:bg-[#EBDBF1] h-[3.5rem] flex items-center justify-center px-6 py-4 rounded-none"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="/my-process"
-                class="hover:bg-[#EBDBF1] h-[3.5rem] flex items-center justify-center px-6 py-4 rounded-none"
-                >My Process</a
-              >
-            </li>
-            <li>
-              <a
-                href="/achievement"
-                class="hover:bg-[#EBDBF1] h-[3.5rem] flex items-center justify-center px-6 py-4 rounded-none"
-                >Achievement</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/beatrixcendana/"
-                class="hover:bg-[#EBDBF1] h-[3.5rem] flex items-center justify-center px-6 py-4 rounded-none"
-                >Connect with me</a
-              >
-            </li>
-            <li>
-              <a
-                href="mailto:beatrixcdn@gmail.com?subject=Hello%20there"
-                class="hover:bg-[#EBDBF1] h-[3.5rem] flex items-center justify-center px-6 py-4 rounded-none"
-                >Email me</a
-              >
-            </li>
-          </ul>
         </div>
-      </div>
+        <div class=" flex items-center lg:hidden">
+            <div class="drawer drawer-end">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle"/>
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <label for="my-drawer-4" class="drawer-button"
+                    >
+                        <svg
+                                width="34"
+                                height="34"
+                                viewBox="0 0 34 34"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                    d="M28.3334 9.9165H5.66669M28.3334 16.9998H5.66669M28.3334 24.0832H5.66669"
+                                    stroke="#5B3EFF"
+                                    stroke-width="2.5"
+                                    stroke-linecap="round"></path>
+                        </svg>
+                    </label>
+                </div>
+                <div
+                        class="drawer-side z-20"
+                        style="font-family: 'Playfair Display', serif;"
+                >
+                    <label
+                            for="my-drawer-4"
+                            aria-label="close sidebar"
+                            class="drawer-overlay"></label>
+                    <ul
+                            class="menu bg-[#FFF2EF] lg:bg-white  w-full p-0 text-[#020202]"
+                    >
+                        <div
+                                class=" p-6 py-10 flex-col justify-start items-start gap-2.5 inline-flex"
+                        >
+                            <div
+                                    class="self-stretch justify-between items-center inline-flex"
+                            >
+                                <a href="/" class="flex-shrink-0 flex items-center">
+                                    <Image src={logoImage} alt="Logo" class="h-[2.25rem] w-auto"/>
+                                </a>
+
+                                <label for="my-drawer-4" class="drawer-button"
+                                >
+                                    <svg
+                                            width="34"
+                                            height="34"
+                                            viewBox="0 0 34 34"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                d="M28.3334 9.9165H5.66669M28.3334 16.9998H5.66669M28.3334 24.0832H5.66669"
+                                                stroke="#5B3EFF"
+                                                stroke-width="2.5"
+                                                stroke-linecap="round"></path>
+                                    </svg>
+                                </label>
+
+                            </div>
+                        </div>
+                        <!-- Sidebar content here -->
+                        <li>
+                            <a
+                                    href="/works/savicore"
+                                    class="hover:bg-[#EBDBF1] h-[3.5rem] flex items-center justify-center px-6 py-4 rounded-none"
+                            >Work</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    href="/about"
+                                    class="hover:bg-[#EBDBF1] h-[3.5rem] flex items-center justify-center px-6 py-4 rounded-none"
+                            >About</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    href="/my-process"
+                                    class="hover:bg-[#EBDBF1] h-[3.5rem] flex items-center justify-center px-6 py-4 rounded-none"
+                            >My Process</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    href="/achievement"
+                                    class="hover:bg-[#EBDBF1] h-[3.5rem] flex items-center justify-center px-6 py-4 rounded-none"
+                            >Achievement</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    href="https://www.linkedin.com/in/beatrixcendana/"
+                                    class="hover:bg-[#EBDBF1] h-[3.5rem] flex items-center justify-center px-6 py-4 rounded-none"
+                            >Connect with me</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    href="mailto:beatrixcdn@gmail.com?subject=Hello%20there"
+                                    class="hover:bg-[#EBDBF1] h-[3.5rem] flex items-center justify-center px-6 py-4 rounded-none"
+                            >Email me</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </nav>
