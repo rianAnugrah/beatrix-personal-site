@@ -9,16 +9,21 @@ import Youtube from "../components/icons/iconFooterYoutube.astro";
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-[#FFF2EF] w-full sm:bg-white flex items-center px-4 sm:px-6 lg:px-[10%] py-6  justify-between">
-  <div class="relative bg-white hidden sm:block overflow-hidden z-10 h-[12rem]  ">
+<footer class="bg-[#FFF2EF] w-full sm:bg-white flex items-center px-4 sm:px-6 lg:px-[2rem] py-6  justify-between">
+  <div class=" h-[12rem] hidden lg:block   w-[18rem]">
+
+
+
     <Image
       src={meImage}
       alt="Savicore image"
-      class="h-full w-full object-cover"
+      class="h-full w-full bg-contain"
     />
+
+
   </div>
 
-  <div class="flex flex-col flex-grow  items-center sm:items-end  gap-4 " style="font-family: 'Playfair Display', serif;">
+  <div class="flex flex-col flex-grow  items-center lg:items-end  gap-4 " style="font-family: 'Playfair Display', serif;">
     <p class="text-center sm:text-right">Talk about design or just want to say hello?<br />Feel free to reach out!</p>
     <div class="flex gap-4">
       <a href="https://www.linkedin.com/in/beatrixcendana/" class="hover:-translate-y-1 transition-all ease-out duration-300 cursor-pointer">

@@ -10,7 +10,7 @@ import Pile from "../Pile.astro";
 import Heading from "../Heading.astro";
 ---
 
-<section class="relative flex flex-col w-full lg:h-[30rem] xl:h-[46rem] bg-[#1564AC] group">
+<section class="relative flex flex-col w-full lg:h-[30rem] xl:h-[40rem] bg-[#1564AC] group overflow-hidden">
   <Image
     src={scDesktop}
     alt="Savicore image-co"
@@ -20,9 +20,12 @@ import Heading from "../Heading.astro";
   <Image
     src={scTablet}
     alt="Savicore image-co"
-    class="hidden lg:block xl:hidden mx-auto relative w-auto h-full"
+    class="hidden lg:block xl:hidden mx-auto relative w-auto h-full z-[1]"
   />
 
+  <div class="hidden lg:block xl:hidden absolute w-[14rem] h-[14rem] -top-[4rem] left-[calc(50%_-_34rem)] rounded-full z-[0] bg-[#E8B87B]">
+
+  </div>
   <Image
     src={scMobile}
     alt="Savicore image-co"
@@ -37,9 +40,9 @@ import Heading from "../Heading.astro";
       <Pile text="UX Design" />
       <Pile text="UX Writing" />
     </div>
-    <div class="text-white text-left">
+    <div class="text-white text-left my-[1.5rem]">
       <h2
-        class={`text-left w-full text-[2rem] xl:text-[4rem] font-bold leading-[5.5rem] text-white`}
+        class={`text-left w-full text-[2rem] xl:text-[3rem] font-bold leading-[3rem] text-white`}
         style="font-family: 'Playfair Display', serif;"
       >
         {title}

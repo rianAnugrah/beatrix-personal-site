@@ -12,7 +12,8 @@ const desc1  = `First version of Savicore`
 const desc2  = `Revamp the entire learning platform website to attract users and encourage them to register for our coaching plans.`
 ---
 
-<section class="relative flex flex-col w-full lg:h-[30rem] xl:h-[46rem]  group bg-[#d8aba9]">
+<section class="relative flex flex-col w-full lg:h-[30rem] xl:h-[40rem] group bg-[#c23a31] bg-opacity-[12%] overflow-hidden">
+
   <Image
     src={scDesktop}
     alt="Savicore image-co"
@@ -22,8 +23,10 @@ const desc2  = `Revamp the entire learning platform website to attract users and
   <Image
     src={scTablet}
     alt="Savicore image-co"
-    class="hidden lg:block xl:hidden w-full h-full"
+    class="hidden lg:block xl:hidden mx-auto relative w-auto h-full z-[1]"
   />
+  <div class="hidden lg:block xl:hidden absolute w-[14rem] h-[14rem] -bottom-[8rem] left-[calc(50%_+_22rem)] rounded-full z-[0] bg-[#5776F7]">
+  </div>
 
   <Image
     src={scMobile}
@@ -38,9 +41,12 @@ const desc2  = `Revamp the entire learning platform website to attract users and
       <Pile text="Web" />
       <Pile text="UX Writing" />
     </div>
-    <div class="">
-      <Heading text={title} />
-    </div>
+    <h2
+      class={`text-left w-full text-[2rem] xl:text-[3rem] font-bold leading-[5.5rem] `}
+      style="font-family: 'Playfair Display', serif;"
+    >
+      {title}
+    </h2>
     <p class="font-bold font-playfair text-[1.75rem] w-full text-xl " style="font-family: 'Playfair Display', serif;">
       {desc1}
     </p>
