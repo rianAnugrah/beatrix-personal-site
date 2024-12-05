@@ -1,3 +1,9 @@
+---
+import { Image } from "astro:assets";
+import prototype from "./src/assets/parabled/";
+import uTest from '*.png';
+---
+
 <!--PROTOTYPE-->
 
 <div id="prototype" class="flex flex-col p-6 w-full text-base text-black ">
@@ -14,5 +20,7 @@
             Despite these limitations, we continued to iterate on the design and content, with our designers creatively adding moving backgrounds to give the website a more dynamic and 'alive' feel.
         </p>
     </div>
-    <div class="flex mt-6 w-full bg-stone-300 min-h-[217px]" role="img" aria-label="Current prototype of subscription page"></div>
+    <div class="flex mt-6 w-full bg-stone-300 min-h-[217px]" role="img" aria-label="Current prototype of subscription page">
+        <Image alt="uTest" src={uTest} class="object-contain w-full aspect-[0.99]" />
+    </div>
 </div>

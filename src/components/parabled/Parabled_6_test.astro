@@ -1,4 +1,12 @@
+---
 
+import { Image } from "astro:assets";
+import subs from "./src/assets/parabled/subscription-plan.png";
+import uTest from "./src/assets/parabled/usablitiy-testing.png";
+import uExp from "./src/assets/parabled/user-expectations.png";
+import missionAcom from "./src/assets/parabled/mission-acomplished.png";
+import emphatyMap from '*.png';
+---
 <!--TEST-->
 <div id="test" class="flex flex-col p-6 w-full text-xl font-semibold text-black ">
     <div class="flex flex-col w-full text-base">
@@ -16,7 +24,7 @@
     </div>
     <h3 class="mt-6">People liked the idea of a free lesson.</h3>
     <h3 class="mt-6">The clean layout and staff quotes intrigued them and made them want to learn more.</h3>
-    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f6549d6b5dfbd3c9d8326141487a9dfe5de0fc085ebdecd68613e35388ca3e2?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Usability testing results" class="object-contain mt-6 w-full aspect-[0.88]" />
+    <Image alt="uTest" src={uTest} class="object-contain w-full aspect-[0.99]" />
 </div>
 <div class="flex flex-col p-6 w-full text-base text-black ">
     <div class="flex flex-col w-full">
@@ -28,7 +36,8 @@
             The positive takeaway was that users clearly understood all the details we provided on the website, <em class="font-semibold">including the services, subscription plans, and testimonials.</em>
         </p>
     </div>
-    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/75822255e74eb75e7ecf4818916f732c595783e3596e0cfcf51b0038fbd583c9?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="User expectations and feedback" class="object-contain mt-6 w-full aspect-[1.45]" />
+    <Image alt="uExp" src={uExp} class="object-contain w-full aspect-[1.46]" />
+
 </div>
 <div class="flex flex-col p-6 w-full text-base text-black">
     <div class="flex flex-col w-full">
@@ -40,7 +49,8 @@
             These were the results of what triggered users to subscribe to our plan:
         </p>
     </div>
-    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8edd2cedd02cd965dc20821bb9867d2b87a2cfd10ae40b466c912762d95fe1c2?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Subscription plan results" class="object-contain mt-6 aspect-[4.46] w-[312px]" />
+    <Image alt="missionAcom" src={missionAcom} class="object-contain w-full aspect-[4.46]" />
+
 </div>
 <div class="flex flex-col p-6 w-full">
     <div class="flex flex-col w-full">

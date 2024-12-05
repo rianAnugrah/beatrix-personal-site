@@ -1,3 +1,8 @@
+---
+import { Image } from "astro:assets";
+import subs from "./src/assets/parabled/subscription-plan.png";
+---
+
 <!--IDEATION -->
 <div id="ideate" class="flex flex-col p-6 w-full text-base text-black">
     <div class="flex flex-col w-full">
@@ -13,5 +18,6 @@
             I added the monthly hours to the live classroom and coaching section to help students understand how much time they should dedicate to becoming a pro gamer.
         </p>
     </div>
-    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4c0c5590670861e555b66f7758285814d037fd22116c61a2f010dc448df1410?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Subscription plan design" class="object-contain mt-6 w-full aspect-[1.43]" />
+    <Image alt="subs" src={subs} class="object-contain w-full aspect-[1.43]" />
+
 </div>
