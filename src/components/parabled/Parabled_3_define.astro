@@ -1,3 +1,22 @@
+---
+import { Image } from "astro:assets";
+import emphatyMap from "./src/assets/parabled/define-emphaty-map.png";
+import firstOption from "./src/assets/parabled/first-option.png";
+import secondOption from "./src/assets/parabled/second-option.png";
+import whatUniques from "./src/assets/parabled/what-make-us-unique.png";
+import services from "./src/assets/parabled/sevices.png";
+import prevdesign from "./src/assets/parabled/previous-design.png";
+import currDesign from "./src/assets/parabled/current-design.png";
+
+
+
+
+
+
+
+
+---
+
 <!--DEFINE -->
 <div id="define" class="flex flex-col p-6 w-full">
     <div class="flex flex-col w-full">
@@ -44,7 +63,7 @@
         </p>
     </aside>
     <figure class="flex flex-col mt-6 w-full text-base text-center text-black">
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d23dec7ec7d6d8876c826afb3a0ce5ca3532254ff06b4bdd0f15242c75f5e61c?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Empathy map visualization" class="object-contain w-full aspect-[0.99]" />
+       <Image alt="emphatyMap" src={emphatyMap} class="object-contain w-full aspect-[0.99]" />
         <figcaption class="self-start mt-4">
             <strong>Above</strong> is the empathy map.
         </figcaption>
@@ -87,11 +106,11 @@
     </div>
     <div class="flex flex-col mt-6 w-full text-xl font-semibold">
         <h3>First option</h3>
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e191168ce2ebd4b99c111381434e3470b30f6e70bf7ca617e25054888c61055a?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="First landing page option" class="object-contain mt-4 w-full aspect-[1.68]" />
+        <Image alt="firstOption" src={firstOption}  class="object-contain mt-4 w-full aspect-[1.66]" />
     </div>
     <div class="flex flex-col mt-6 w-full text-xl font-semibold">
         <h3>Second option</h3>
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9a24ca781b88e730ac212f440eaf764bd06d27acb9a05eb41811a958bbc16d92?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Second landing page option" class="object-contain mt-4 w-full aspect-[1.66]" />
+        <Image alt="secondOption" src={secondOption}  class="object-contain mt-4 w-full aspect-[1.66]" />
     </div>
     <aside class="flex gap-10 justify-center items-start mt-6 w-full">
         <div class="flex flex-col flex-1 shrink p-4 w-full rounded-2xl border-2 border-sky-500 border-solid basis-0 min-w-[240px]">
@@ -115,7 +134,7 @@
         <p class="mt-4 text-base">
             I'm sure many gamers listen to music through YouTube Music or Spotify, which is why the co-founder asked me to compare the plan with Spotify's. This inspired me to incorporate it into the content as part of our engagement strategy.
         </p>
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4f60469bf47135b977101c98c287995dc41ce0d0486edc506bba336ddb83a56c?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Comparison of plans with other platforms" class="object-contain mt-4 w-full aspect-[1.81]" />
+        <Image alt="whatUniques" src={whatUniques}  class="object-contain mt-4 w-full aspect-[1.66]" />
     </div>
 </div>
 <div class="flex flex-col justify-center p-6 w-full text-black">
@@ -124,7 +143,7 @@
         <p class="mt-4 text-base">
             We often watch long streaming videos without fully understanding the players' actions and movement types. With Parabled, you can rest assured—we provided detailed explanations of what pro players should do in every game scenario.
         </p>
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cb23de4af0876c018d708a328400322a76d63cdfdea5c38df6720799dded916d?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Parabled services overview" class="object-contain mt-4 w-full aspect-[1.34]" />
+        <Image alt="services" src={services}  class="object-contain mt-4 w-full aspect-[1.34]" />
     </div>
 </div>
 <div class="flex flex-col p-6 w-full  text-black">
@@ -136,10 +155,10 @@
     </div>
     <div class="flex flex-col mt-6 w-full text-xl font-semibold">
         <h4>Previous design</h4>
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b6a2369c62453ecdfe7b7c209bf7c6eadcd2f1812e82b4794f738a23adfa8fde?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Previous design of call to action" class="object-contain mt-4 w-full aspect-[1.76]" />
+        <Image alt="prevdesign" src={prevdesign}  class="object-contain mt-4 w-full aspect-[1.76]" />
     </div>
     <div class="flex flex-col mt-6 w-full text-xl font-semibold">
         <h4>Current design</h4>
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/955f0d2925a583a80f6303b07c2f7ae9e8859b875fc395fcf1b6eaf4ed6eec1e?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Current design of call to action" class="object-contain mt-4 w-full aspect-[2.2]" />
+        <Image alt="currDesign" src={currDesign}  class="object-contain mt-4 w-full aspect-[2.2]" />
     </div>
 </div>

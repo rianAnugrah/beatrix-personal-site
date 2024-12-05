@@ -1,3 +1,14 @@
+---
+import { Image } from "astro:assets";
+import existing from "./src/assets/parabled/overview-existing-parabled.png";
+import pricing from "./src/assets/parabled/overview-existing-pricing.png";
+import website from "./src/assets/parabled/overview-existing-website.png";
+import metafy from "./src/assets/parabled/overview-metafy.png";
+import betterGamer from "./src/assets/parabled/overview-better-gamer.png";
+import howitWorks from "./src/assets/parabled/overview-how-it-works.png";
+
+---
+
 <!-- EMPHATIZE -->
 <div id="emphatize" class="flex flex-col p-6 w-full">
     <div class="flex flex-col w-full">
@@ -25,7 +36,7 @@
         </p>
         <p class="mt-4">These were our analysis of the website:</p>
     </div>
-    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/884c0081e7b92e7301cba2960a9236214d896771c344cd4a052a95962bb19937?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Analysis of existing Parabled website" class="object-contain mt-6 w-full aspect-[1.99]" />
+    <Image alt="Existing" src={existing} class="object-contain mt-6 w-full aspect-[1.99]" />
     <div class="flex flex-col mt-6 w-full text-black">
         <h3 class="text-xl font-semibold">➡️ The font was in all caps</h3>
         <p class="mt-4 text-base">
@@ -49,14 +60,14 @@
     </div>
 </div>
 <div class="flex flex-col p-6 w-full text-xl font-semibold text-black ">
-    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/848cc69f19e70ea03756a5fe593e76c743e3a520af9a46b2af3ebcf7cee6170c?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Additional analysis of Parabled website" class="object-contain w-full aspect-[1.99]" />
+    <Image alt="Website" src={website} class="object-contain mt-6 w-full aspect-[1.99]" />
     <div class="flex flex-col mt-6 w-full">
         <h3>➡️ The website contained too much text</h3>
         <h3 class="mt-4">➡️ The cards looked like clickable</h3>
     </div>
 </div>
 <div class="flex flex-col p-6 w-full text-black">
-    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8312da6c49ca174ade982d5fb524ff902caffa4b0302760bc77fa27b336c3384?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Subscription plan analysis" class="object-contain w-full aspect-[2.05]" />
+    <Image alt="Existing" src={pricing} class="object-contain mt-6 w-full aspect-[1.99]" />
     <div class="flex flex-col mt-6 w-full">
         <h3 class="text-xl font-semibold">➡️ Each package was not complete</h3>
         <p class="mt-4 text-base">
@@ -120,7 +131,7 @@
             At the time we conducted the research, there weren't many coaching websites to compare with, aside from two competitors.
         </p>
     </div>
-    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/498e79382ee9b1603594e7973a86919e0548dfe3f795ed89f0c426cd533181b3?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Competitive analysis overview" class="object-contain mt-6 w-full aspect-[1.99]" />
+    <Image alt="metafy" src={metafy} class="object-contain mt-6 w-full aspect-[1.99]" />
     <div class="flex gap-10 justify-center items-start mt-6 w-full text-black">
         <aside class="flex flex-col flex-1 shrink p-4 w-full rounded-2xl border-2 border-sky-500 border-solid basis-0 min-w-[240px]">
             <h3 class="text-xl font-bold">Metafy</h3>
@@ -144,7 +155,7 @@
             </div>
         </aside>
     </div>
-    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/215820e652e89b8dd82f5b16f98501f4fc7288c40ceb9abd66045976e6fc68d7?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Better Gamer competitive analysis" class="object-contain mt-6 w-full aspect-[1.86]" />
+    <Image alt="bettergamer" src={betterGamer} class="object-contain mt-6 w-full aspect-[1.99]" />
     <div class="flex gap-10 justify-center items-start mt-6 w-full text-black">
         <aside class="flex flex-col flex-1 shrink p-4 w-full rounded-2xl border-2 border-sky-500 border-solid basis-0 min-w-[240px]">
             <h3 class="text-xl font-bold">Better Gamer</h3>
@@ -166,7 +177,7 @@
             </div>
         </aside>
     </div>
-    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b128aa2cc07739f1436d5660d4ef07e23fd57316a15a131f7eefcd130f5932d?placeholderIfAbsent=true&apiKey=36a6ec44b2c9485d99179a8191a89170" alt="Competitive analysis summary" class="object-contain mt-6 w-full aspect-[2.4]" />
+    <Image alt="howItWorks" src={howitWorks} class="object-contain mt-6 w-full aspect-[1.99]" />
 </div>
 <div class="flex flex-col p-6 w-full text-base text-black">
     <div class="flex flex-col w-full">
