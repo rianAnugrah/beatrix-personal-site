@@ -72,7 +72,7 @@ import Dropdown from "../Dropdown.astro";
     <div
       tabindex="0"
       id="dropdownMenu"
-      class="bg-base-100 flex flex-col  z-[1] w-screen -left-4 m-0  bottom-14 absolute border"
+      class="bg-white hidden flex flex-col  z-[1] w-screen -left-4 m-0  bottom-14 absolute border"
     >
       <a
         href="#overview"
@@ -147,33 +147,38 @@ function updateScrollProgress() {
 
 
 <script>
+document.addEventListener('DOMContentLoaded', () => {
   const dropdownButton = document.getElementById('sectionButton');
   const dropdownMenu = document.getElementById('dropdownMenu');
   const chevronIcon = document.getElementById('chevron-icon');
 
   function closeDropdown() {
-      dropdownMenu.classList.add('hidden');
-      chevronIcon.classList.add('rotate-90');
-  }
+    dropdownMenu.classList.add('hidden');
+    chevronIcon.classList.remove('rotate-90');
+    }
+
+  // Close dropdown on page load
+    closeDropdown();
 
   dropdownButton.addEventListener('click', (event) => {
-      event.stopPropagation();
-      dropdownMenu.classList.toggle('hidden');
-      chevronIcon.classList.toggle('rotate-90');
-  });
+    event.stopPropagation();
+    dropdownMenu.classList.toggle('hidden');
+    chevronIcon.classList.toggle('rotate-90');
+    });
 
   // Close dropdown when clicking outside
-  document.addEventListener('click', closeDropdown);
+    document.addEventListener('click', closeDropdown);
 
   // Close dropdown when clicking on a menu item
-  dropdownMenu.addEventListener('click', (event) => {
-      if (event.target.tagName === 'A') {
-          closeDropdown();
-      }
+    dropdownMenu.addEventListener('click', (event) => {
+  if (event.target.tagName === 'A') {
+    closeDropdown();
+    }
   });
 
   // Prevent dropdown from closing when clicking inside the menu
-  dropdownMenu.addEventListener('click', (event) => {
-      event.stopPropagation();
+    dropdownMenu.addEventListener('click', (event) => {
+  event.stopPropagation();
+  });
   });
 </script>
