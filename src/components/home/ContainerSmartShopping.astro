@@ -10,20 +10,20 @@ import Pile from "../Pile.astro";
 import Heading from "../Heading.astro";
 ---
 
-<section class="relative flex flex-col w-full lg:h-[30rem] xl:h-[40rem] bg-[#1564AC] group overflow-hidden">
+<section class="relative flex flex-col w-full lg:h-[30rem]  bg-[#1564AC] group overflow-hidden">
   <Image
     src={scDesktop}
     alt="Savicore image-co"
-    class="hidden xl:block w-auto mx-auto h-full relative   z-[1] "
+    class="hidden  w-auto mx-auto h-full relative   z-[1] "
   />
 
   <Image
     src={scTablet}
     alt="Savicore image-co"
-    class="hidden lg:block xl:hidden mx-auto relative w-auto h-full z-[1]"
+    class="hidden lg:block  mx-auto relative w-auto h-full z-[1]"
   />
 
-  <div class="hidden lg:block xl:hidden absolute w-[14rem] h-[14rem] -top-[4rem] left-[calc(50%_-_34rem)] rounded-full z-[0] bg-[#E8B87B]">
+  <div class="hidden lg:block  absolute w-[14rem] h-[14rem] -top-[4rem] left-[calc(50%_-_34rem)] rounded-full z-[0] bg-[#E8B87B]">
 
   </div>
   <Image
@@ -33,22 +33,22 @@ import Heading from "../Heading.astro";
   />
 
   <div
-    class="hidden absolute w-[28rem]  top-1/2 lg:left-[calc(50%_+_2rem)] xl:left-[calc(50%_+_8rem)] z-[2] -translate-y-1/2 lg:flex flex-col items-start justify-center gap-4 "
+    class="hidden absolute w-[28rem]  top-1/2 lg:left-[calc(50%_+_2rem)]  z-[2] -translate-y-1/2 lg:flex flex-col items-start justify-center gap-4 "
   >
     <div class="flex gap-4">
       <Pile text="Mobile" />
       <Pile text="UX Design" />
       <Pile text="UX Writing" />
     </div>
-    <div class="text-white text-left my-[1.5rem]">
+    <div class="text-white text-left">
       <h2
-        class={`text-left w-full text-[2rem] xl:text-[3rem] font-bold leading-[3rem] text-white`}
+        class={`text-left w-full text-[2rem]  font-bold leading-[3rem] text-white`}
         style="font-family: 'Playfair Display', serif;"
       >
         {title}
       </h2>
     </div>
-    <p class="italic w-full text-xl text-white pr-[20%]">
+    <p class="italic w-full  text-white pr-[20%]">
       {desc}
     </p>
   </div>

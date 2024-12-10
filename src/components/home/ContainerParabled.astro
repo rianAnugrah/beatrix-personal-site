@@ -12,20 +12,20 @@ const desc1  = `First version of Savicore`
 const desc2  = `Revamp the entire learning platform website to attract users and encourage them to register for our coaching plans.`
 ---
 
-<section class="relative flex flex-col w-full lg:h-[30rem] xl:h-[40rem] group bg-[#c23a31] bg-opacity-[12%] overflow-hidden">
+<section class="relative flex flex-col w-full lg:h-[30rem]  group bg-[#c23a31] bg-opacity-[12%] overflow-hidden">
 
   <Image
     src={scDesktop}
     alt="Savicore image-co"
-    class="hidden xl:block w-auto mx-auto h-full relative   z-[1]  "
+    class="hidden  w-auto mx-auto h-full relative   z-[1] "
   />
 
   <Image
     src={scTablet}
     alt="Savicore image-co"
-    class="hidden lg:block xl:hidden mx-auto relative w-auto h-full z-[1]"
+    class="hidden lg:block  mx-auto relative w-auto h-full z-[1]"
   />
-  <div class="hidden lg:block xl:hidden absolute w-[14rem] h-[14rem] -bottom-[8rem] left-[calc(50%_+_22rem)] rounded-full z-[0] bg-[#5776F7]">
+  <div class="hidden lg:block  absolute w-[14rem] h-[14rem] -bottom-[8rem] left-[calc(50%_+_22rem)] rounded-full z-[0] bg-[#5776F7]">
   </div>
 
   <Image
@@ -35,22 +35,22 @@ const desc2  = `Revamp the entire learning platform website to attract users and
   />
 
   <div
-    class="hidden absolute w-[24rem]  top-1/2 lg:left-[calc(50%_+_2rem)] xl:left-[calc(50%_-_34rem)]   z-[2] -translate-y-1/2 lg:flex flex-col items-start justify-center gap-4 "
+    class="hidden absolute w-[24rem]  top-1/2 lg:left-[calc(50%_+_2rem)]    z-[2] -translate-y-1/2 lg:flex flex-col items-start justify-center gap-4 "
   >
     <div class="flex gap-4">
       <Pile text="Web" />
       <Pile text="UX Writing" />
     </div>
     <h2
-      class={`text-left w-full text-[2rem] xl:text-[3rem] font-bold leading-[5.5rem] `}
+      class={`text-left w-full text-[2rem]  font-bold leading-[3rem] `}
       style="font-family: 'Playfair Display', serif;"
     >
       {title}
     </h2>
-    <p class="font-bold font-playfair text-[1.75rem] w-full text-xl " style="font-family: 'Playfair Display', serif;">
+    <p class="font-bold font-playfair text-[1.5rem] w-full  " style="font-family: 'Playfair Display', serif;">
       {desc1}
     </p>
-    <p class="italic w-full text-xl ">
+    <p class="italic w-full  ">
       {desc2}
     </p>
   </div>
