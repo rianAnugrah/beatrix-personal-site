@@ -23,42 +23,42 @@ import Dropdown from "../Dropdown.astro";
 
 
 <div
-  class="fixed bottom-0 z-20 left-0 right-0 hidden md:flex justify-center items-center bg-white border-t border-gray-200 p-4"
+  class="fixed bottom-0 z-20 left-0 right-0 hidden md:flex justify-center items-center bg-white border-t border-gray-200 h-[3rem]"
 >
   <a
     href="#overview"
-    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-2"
+    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-0"
     data-target="overview">Overview</a
   >
   <a
     href="#emphatize"
-    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-2"
+    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-0"
     data-target="emphatize">Empathize</a
   >
   <a
     href="#define"
-    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-2"
+    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-0"
     data-target="define">Define</a
   >
   <a
     href="#ideate"
-    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-2"
+    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-0"
     data-target="ideate">Ideate</a
   >
   <a
     href="#prototype"
-    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-2"
+    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-0"
     data-target="prototype">Prototype</a
   >
   <a
     href="#test"
-    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-2"
+    class="scroll-to-section text-[#020202] hover:text-[#5B3EFF] transition-colors duration-300 px-4 py-0"
     data-target="test">Test</a
   >
 </div>
 
 <div
-  class="fixed  bottom-0 z-20 left-0 right-0 flex md:hidden justify-center items-start bg-white border-t border-gray-200 p-4"
+  class="fixed bottom-0 z-20 left-0 right-0 flex md:hidden justify-center items-start bg-white border-t border-gray-200 px-4 h-[3rem]"
 >
 
 
@@ -72,7 +72,7 @@ import Dropdown from "../Dropdown.astro";
     <div
       tabindex="0"
       id="dropdownMenu"
-      class="bg-white hidden flex flex-col  z-[1] w-screen -left-4 m-0  bottom-14 absolute border"
+      class="bg-white flex  flex-col  z-[1] w-screen -left-4 m-0  bottom-[calc(3rem_-_8px)] absolute border"
     >
       <a
         href="#overview"
@@ -109,7 +109,7 @@ import Dropdown from "../Dropdown.astro";
 </div>
 
 
-<div class="progress-bar bottom-[4.5rem] " id="progressBar"></div>
+<div class="progress-bar bottom-[3rem] " id="progressBar"></div>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll(".scroll-to-section");
@@ -143,7 +143,6 @@ function updateScrollProgress() {
     progressBar.style.width = scrollPercentage + '%';
 }
 </script>
-
 
 
 

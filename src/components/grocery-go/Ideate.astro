@@ -7,7 +7,7 @@ import IconPremium from "../../components/icons/IconPremium.astro";
 import IconReceipt from "../../components/icons/IconReceipt.astro";
 ---
 
-<div class="w-full  mx-auto py-6 px-[6%] flex flex-col items-center gap-6" id="ideate">
+<div class="w-full  mx-auto py-6 px-[1.5rem] lg:px-[10rem] flex flex-col items-center gap-6" id="ideate">
     <div class="w-full flex flex-col gap-2">
       <div class="mb-2">
         <span class="text-[#5B3EFF] text-lg font-bold font-playfair">IDEATION 1<br/></span>
@@ -32,7 +32,7 @@ import IconReceipt from "../../components/icons/IconReceipt.astro";
     
 
 
-    <div class="flex flex-col md:flex-row justify-center gap-4">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 mt-6 w-full">
       <div class="flex flex-col items-center gap-2  w-[236px]">
         <div class="w-12 h-12 relative">
           <IconFile />
@@ -52,7 +52,7 @@ import IconReceipt from "../../components/icons/IconReceipt.astro";
         <p class="text-center text-[#020202] text-base font-opensans">They can understand how the reward works.</p>
       </div>
     </div>
-    <div class="flex flex-col md:flex-row justify-center gap-4">
+    <div class="flex flex-col md:flex-row items-center justify-evenly gap-4 mb-6 w-full">
       <div class="flex flex-col items-center gap-2  w-[236px]">
         <div class="w-12 h-12 relative">
          <IconReceipt />
@@ -83,5 +83,5 @@ import IconReceipt from "../../components/icons/IconReceipt.astro";
       <h3 class="text-[#020202] text-xl font-semibold font-playfair mb-2">Issue with the UI</h3>
       <p class="text-[#020202] text-base font-opensans">After talking to our design mentor, we realized that there was something that we lacked, which was the UI design. There was no color consistency between the logo and the button color. Also, we should pay more attention to the position of the text and the font size.</p>
     </div>
-    <Image class="w-full h-auto md:w-4/5" src={ideation} alt="UI Design Issue" />
+    <Image class="w-full h-auto md:w-[45rem]" src={ideation} alt="UI Design Issue" />
   </div>
