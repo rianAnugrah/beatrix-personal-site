@@ -18,58 +18,60 @@ import currDesign from "../../assets/parabled/current-design.png";
 ---
 
 <!--DEFINE -->
-<div id="define" class="flex flex-col p-6 w-full lg:max-w-[45rem] mx-auto">
+<div id="define" class="flex flex-col px-6 my-10 w-full lg:max-w-[45rem] mx-auto">
     <div class="flex flex-col w-full">
         <h2 class="text-2xl font-bold text-neutral-600">
             <span class="text-lg text-indigo-600" style="font-family: 'Playfair Display', serif;">DEFINE USER'S NEEDS</span>
             <br />
             <span class="text-xl font-semibold text-black" style="font-family: 'Playfair Display', serif;">Synthesize the empathy map</span>
         </h2>
-        <p class="mt-4 text-base text-black">
+        <p class="mt-4 text-base xl:text-sm text-black">
             During the interview process, we noticed similar patterns among both potential and existing students.
         </p>
     </div>
-    <blockquote class="mt-6 text-xl font-semibold text-center text-black italic">
+    <blockquote class="mt-6 text-xl xl:text-lg font-semibold text-center text-black italic">
         "I would like more details on what each subscription plan offers."
     </blockquote>
-    <blockquote class="mt-6 text-xl font-semibold text-center text-black italic">
+    <blockquote class="mt-6 text-xl xl:text-lg font-semibold text-center text-black italic">
         "I don't like when information is cluttered with too much text."
     </blockquote>
-    <blockquote class="mt-6 text-xl font-semibold text-center text-black italic">
+    <blockquote class="mt-6 text-xl xl:text-lg font-semibold text-center text-black italic">
         "Are all classes hosted on Discord or on the website?"
     </blockquote>
-    <aside class="flex flex-col p-4 mt-6 w-full text-black bg-cyan-200 rounded-2xl">
-        <h3 class="text-xl font-bold" style="font-family: 'Playfair Display', serif;">After signing up...</h3>
-        <p class="mt-2.5 text-base">
+<div class="flex flex-wrap gap-6 mt-6">
+    <aside class="flex flex-col p-4  w-full md:w-[20rem]  mx-auto text-black bg-cyan-200 rounded-2xl">
+        <h3 class="text-xl xl:text-lg font-bold" style="font-family: 'Playfair Display', serif;">After signing up...</h3>
+        <p class="mt-2.5 text-base xl:text-sm">
             <em>for the subscription, it didn't direct me to Discord to join other members.</em>
             <br />
-            <strong>-- Klaus, existing student, 17, Germany</strong>
+            <p class="font-semibold xl:text-sm">-- Klaus, existing student, 17, Germany</p>
         </p>
     </aside>
-    <aside class="flex flex-col p-4 mt-6 w-full text-black bg-cyan-200 rounded-2xl">
-        <h3 class="text-xl font-bold" style="font-family: 'Playfair Display', serif;">I love coaching...</h3>
-        <p class="mt-2.5 text-base">
+    <aside class="flex flex-col p-4  w-full md:w-[20rem]  mx-auto text-black bg-cyan-200 rounded-2xl">
+        <h3 class="text-xl xl:text-lg font-bold" style="font-family: 'Playfair Display', serif;">I love coaching...</h3>
+        <p class="mt-2.5 text-base xl:text-sm">
             <em>session, but the website doesn't clarify whether I could use a free trial or not.</em>
             <br />
-            <strong>-- Riley, Esports player, 25, U.S.</strong>
+            <p class="font-semibold  xl:text-sm">-- Riley, Esports player, 25, U.S.</p>
         </p>
     </aside>
-    <aside class="flex flex-col p-4 mt-6 w-full text-black bg-cyan-200 rounded-2xl">
-        <h3 class="text-xl font-bold">I want to see a list of...</h3>
-        <p class="mt-2.5 text-base">
-            all coaches. I currently can only view the founder's team.
+    <aside class="flex flex-col p-4 w-full md:w-1/2  mx-auto text-black bg-cyan-200 rounded-2xl">
+        <h3 class="text-xl xl:text-lg font-bold"  style="font-family: 'Playfair Display', serif;">I want to see a list of...</h3>
+        <p class="mt-2.5 text-base xl:text-sm ">
+            <em>all coaches. I currently can only view the founder's team.</em>
             <br />
-            <strong>-- Sam, free trial member, 28, U.S.</strong>
+            <p class="font-semibold  xl:text-sm">-- Sam, free trial member, 28, U.S.</p>
         </p>
     </aside>
-    <figure class="flex flex-col mt-6 w-full text-base text-center text-black">
+</div> 
+    <figure class="flex flex-col mt-6 w-full text-base  xl:text-sm text-center text-black mb-2">
        <Image alt="emphatyMap" src={emphatyMap} class="object-contain w-full  mx-auto aspect-[0.99]" />
-        <figcaption class="self-start mt-4">
+        <figcaption class="self-start mt-4 text-center w-full">
             <strong>Above</strong> is the empathy map.
         </figcaption>
     </figure>
 </div>
-<div class="w-full lg:max-w-[45rem] mx-auto px-6">
+<div class="w-full lg:max-w-[45rem] mx-auto px-6 mb-4">
 
     <div style="font-family: 'Playfair Display', serif;" class="w-full flex gap-2  bg-[#DAD4FE] p-6 rounded-xl font-['Playfair_Display']">
         <div class="w-5 h-5" >
@@ -90,7 +92,9 @@ import currDesign from "../../assets/parabled/current-design.png";
         </div>
     </div>
 </div>
-<div class="flex flex-col p-6 w-full lg:max-w-[45rem] mx-auto text-base  text-black">
+
+
+<div class="flex flex-col p-6 w-full lg:max-w-[45rem] mx-auto text-base  xl:text-sm text-black">
     <div class="flex flex-col w-full">
         <h2 class="text-2xl font-bold text-neutral-600">
             <span class="text-lg text-indigo-600" style="font-family: 'Playfair Display', serif;">HOMEPAGE IDEATION PROCESS</span>
@@ -104,16 +108,16 @@ import currDesign from "../../assets/parabled/current-design.png";
             Based on this, I drafted two options for the landing page, both of which direct users to start a free lesson.
         </p>
     </div>
-    <div class="flex flex-col mt-6 w-full text-xl font-semibold">
+    <div class="flex flex-col mt-6 w-full text-xl  xl:text-lg font-semibold">
         <h3 class="italic">First option</h3>
         <Image alt="firstOption" src={firstOption}  class="object-contain mt-4 w-full lg:w-[45rem] mx-auto aspect-[1.66]" />
     </div>
-    <div class="flex flex-col mt-6 w-full text-xl font-semibold">
+    <div class="flex flex-col mt-6 w-full text-xl  xl:text-lg font-semibold">
         <h3 class="italic">Second option</h3>
         <Image alt="secondOption" src={secondOption}  class="object-contain mt-4 w-full lg:w-[45rem] mx-auto aspect-[1.66]" />
     </div>
     <aside class="flex gap-10 justify-center items-start mt-6 w-full">
-        <div class="flex flex-col flex-1 shrink p-4 w-full rounded-2xl border-2 border-sky-500 border-solid basis-0 min-w-[240px]">
+        <div class="flex flex-col text-base xl:text-sm flex-1 shrink p-4 w-full rounded-2xl border-2 border-sky-500 border-solid basis-0 min-w-[240px]">
             <h3 class="text-xl font-bold" style="font-family: 'Playfair Display', serif;">Explanation:</h3>
             <p class="mt-2.5">
                 The two designs above share the same approach: connecting students with expert coaches. However, the designers prefer to present the subtitle as a quote, as indicated in the first design.
@@ -131,16 +135,16 @@ import currDesign from "../../assets/parabled/current-design.png";
 <div class="flex flex-col justify-center p-6  w-full lg:max-w-[45rem] mx-auto text-black">
     <div class="flex flex-col w-full">
         <h3 class="text-xl font-semibold" style="font-family: 'Playfair Display', serif;">We compared our plans with others = marketing strategy?</h3>
-        <p class="mt-4 text-base">
+        <p class="mt-4 text-base  xl:text-sm">
             I'm sure many gamers listen to music through YouTube Music or Spotify, which is why the co-founder asked me to compare the plan with Spotify's. This inspired me to incorporate it into the content as part of our engagement strategy.
         </p>
-        <Image alt="whatUniques" src={whatUniques}  class="object-contain mt-4 w-full lg:w-[45rem] mx-auto aspect-[1.66]" />
+        <Image alt="whatUniques" src={whatUniques}  class="object-contain mt-0 w-full lg:w-[45rem] mx-auto aspect-[1.66]" />
     </div>
 </div>
 <div class="flex flex-col justify-center p-6 w-full lg:max-w-[45rem] mx-auto text-black">
     <div class="flex flex-col w-full">
         <h3 class="text-xl font-semibold" style="font-family: 'Playfair Display', serif;">What services in Parabled should look like…</h3>
-        <p class="mt-4 text-base">
+        <p class="mt-4 text-base  xl:text-sm">
             We often watch long streaming videos without fully understanding the players' actions and movement types. With Parabled, you can rest assured—we provided detailed explanations of what pro players should do in every game scenario.
         </p>
         <Image alt="services" src={services}  class="object-contain mt-4 w-full lg:w-[45rem] mx-auto aspect-[1.34]" />
@@ -149,15 +153,15 @@ import currDesign from "../../assets/parabled/current-design.png";
 <div class="flex flex-col p-6 w-full lg:max-w-[45rem] mx-auto  text-black">
     <div class="flex flex-col w-full">
         <h3 class="text-xl font-semibold" style="font-family: 'Playfair Display', serif;">Let's add an additional button!</h3>
-        <p class="mt-4 text-base">
+        <p class="mt-4 text-base  xl:text-sm">
             The call to action is an additional feature located at the bottom of the homepage, near the footer. I took the title from the previous website and considered expanding on it for the second design.
         </p>
     </div>
-    <div class="flex flex-col mt-6 w-full text-xl font-semibold">
+    <div class="flex flex-col mt-6 w-full text-xl  xl:text-lg font-semibold">
         <h4 class="italic">Previous design</h4>
         <Image alt="prevdesign" src={prevdesign}  class="object-contain mt-4 w-full lg:w-[45rem] mx-auto aspect-[1.76]" />
     </div>
-    <div class="flex flex-col mt-6 w-full text-xl font-semibold">
+    <div class="flex flex-col mt-6 w-full text-xl  xl:text-lg font-semibold">
         <h4 class="italic">Current design</h4>
         <Image alt="currDesign" src={currDesign}  class="object-contain mt-4 w-full lg:w-[45rem] mx-auto aspect-[2.2]" />
     </div>
