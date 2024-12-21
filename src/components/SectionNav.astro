@@ -110,39 +110,7 @@ import Dropdown from "../Dropdown.astro";
 
 
 <div class="progress-bar hidden md:block md:bottom-[5rem] xl:bottom-[3.1rem]" id="progressBar"></div>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll(".scroll-to-section");
-    const sectionButton = document.getElementById("sectionButton");
 
-    links.forEach((link) => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute("data-target");
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: "smooth" });
-          // Update the sectionButton text
-          sectionButton.textContent = link.textContent;
-        }
-      });
-    });
-  });
-
-
-  window.onscroll = function() {
-    updateScrollProgress();
-};
-
-function updateScrollProgress() {
-    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPosition = window.scrollY;
-    const scrollPercentage = (scrollPosition / totalHeight) * 100;
-
-    const progressBar = document.getElementById('progressBar');
-    progressBar.style.width = scrollPercentage + '%';
-}
-</script>
 
 
 
