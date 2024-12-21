@@ -23,7 +23,7 @@ import Dropdown from "../Dropdown.astro";
 
 
 <div
-  class="fixed bottom-0 z-20 left-0 right-0 hidden md:flex justify-center items-center bg-white border-t border-gray-200 h-[3rem]"
+  class="fixed text-base md:text-sm bottom-0 z-20 left-0 right-0 hidden md:flex justify-center items-center bg-white border-t border-gray-200 py-8  xl:py-4"
 >
   <a
     href="#overview"
@@ -57,7 +57,7 @@ import Dropdown from "../Dropdown.astro";
   >
 </div>
 
-<div
+<!-- <div
   class="fixed bottom-0 z-20 left-0 right-0 flex md:hidden justify-center items-start bg-white border-t border-gray-200 px-4 h-[3rem]"
 >
 
@@ -106,10 +106,10 @@ import Dropdown from "../Dropdown.astro";
       >
     </div>
   </div>
-</div>
+</div> -->
 
 
-<div class="progress-bar bottom-[3rem] " id="progressBar"></div>
+<div class="progress-bar hidden md:block md:bottom-[5rem] xl:bottom-[3.1rem]" id="progressBar"></div>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll(".scroll-to-section");
