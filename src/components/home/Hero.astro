@@ -5,51 +5,62 @@
     class=" text-[2.5rem] lg:text-[5rem] leading-[5rem] w-full text-center max-w-[64rem] mx-auto mb-4"
     style="font-family: 'Playfair Display', serif;"
   >
-    <span id="typewriter"></span><span class="text-[#5B3EFF] transition-all duration-700" id="name"></span><span id="exclamation"></span>
+    <!-- <span id="typewriter"></span><span class="text-[#5B3EFF] transition-all duration-700" id="name"></span><span id="exclamation"></span> -->
+    Hey, I'm <span id="typewriter"></span><span id="name" class="font-medium text-[#5B3EFF]"></span><span id="exclamation"></span>
     <script>
-      const text = "Hey, I'm ";
-      const name = "Beatrix";
-      let isPulsing = true;
-
-      function pulseName() {
-        if (isPulsing) {
-          document.getElementById("name").style.opacity = "0.8";
-          setTimeout(() => {
-            document.getElementById("name").style.opacity = "1";
-            setTimeout(pulseName, 1000);
-          }, 1000);
-        }
-      }
-
-      setTimeout(pulseName, 3000); // Start pulsing after the name is fully typed
-      const exclamation = "!";
-      let i = 0;
-      let j = 0;
-      let k = 0;
+      const text = "";
+      const names = ["Beatrix", "Creator", "Writer"];
+      const exclamation = "";
+      let nameIndex = 0;
+      let i = 0, j = 0, k = 0;
+      let isTyping = false;
 
       function typeWriter() {
-        if (i < text.length) {
-          document.getElementById("typewriter").innerHTML += text.charAt(i);
-          i++;
-          setTimeout(typeWriter, 100);
-        } else if (j < name.length) {
-          document.getElementById("name").innerHTML += name.charAt(j);
-          j++;
-          setTimeout(typeWriter, 100);
-        } else if (k < exclamation.length) {
-          document.getElementById("exclamation").innerHTML += exclamation.charAt(k);
-          k++;
-          setTimeout(typeWriter, 100);
-        }
+          const typewriterEl = document.getElementById("typewriter");
+          const nameEl = document.getElementById("name");
+          const exclamationEl = document.getElementById("exclamation");
+
+          if (i < text.length) {
+              typewriterEl.innerHTML += text.charAt(i);
+              i++;
+              setTimeout(typeWriter, 100);
+          } else if (j < names[nameIndex].length) {
+              nameEl.innerHTML += names[nameIndex].charAt(j);
+              j++;
+              nameEl.classList.add("pulse"); // Add pulse effect
+              setTimeout(typeWriter, 100);
+          } else if (k < exclamation.length) {
+              exclamationEl.innerHTML += exclamation.charAt(k);
+              k++;
+              isTyping = false;
+          }
       }
 
-      window.onload = typeWriter;
-    </script>
+      function resetAndType() {
+          if (isTyping) return;
+
+          isTyping = true;
+          i = j = k = 0;
+
+          document.getElementById("typewriter").innerHTML = "";
+          document.getElementById("name").innerHTML = "";
+          document.getElementById("exclamation").innerHTML = "";
+
+          typeWriter();
+      }
+
+      window.onload = () => {
+          typeWriter();
+          setInterval(() => {
+              nameIndex = (nameIndex + 1) % names.length;
+              resetAndType();
+          }, 5000); // Change name every 10 seconds
+      };
+  </script>
   </h1>
   <p class="w-full text-center max-w-[45rem]  text-lg md:text-lg font-normal pb-16">
-    A <span class="font-bold italic">UX Designer</span>  &nbsp;or <span class="font-bold italic">UX Writer</span> &nbsp;with 4+ years of experience, I am skilled at
-    solving complex problems and crafting compelling narratives. My unique blend
-    of mathematical, creative, and empathetic skills allows me to create
-    innovative solutions that resonate deeply with users and businesses.
+    Content Designer @ <span class="font-semibold ">Alibaba</span> with 4+ years of experience in <span class="font-semibold ">UX Design/Writing</span>. 
+    I turn complex ideas into clear, engaging content that connects with users and supports business goals. My mix of logic, 
+    creativity, and empathy helps me create meaningful and user-friendly solutions.
   </p>
 </section>
