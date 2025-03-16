@@ -14,7 +14,7 @@ const desc2 = `Optimize the checkout, dashboard, and group coaching registration
 
 
 
-<section class="w-full lg:w-[80rem] mb-[3rem] lg:mb-0 mx-auto lg:h-[30rem] flex flex-col lg:flex-row items-center px-0 lg:px-[7.5rem] ">
+<section class="reveal-section w-full lg:w-[80rem] mb-[3rem] lg:mb-0 mx-auto lg:h-[30rem] flex flex-col lg:flex-row items-center px-0 lg:px-[7.5rem] ">
     <div class="w-full lg:w-[35.5rem] h-[20rem] lg:h-[30rem]">
         <Image
           src={scDesktop}
@@ -37,3 +37,43 @@ const desc2 = `Optimize the checkout, dashboard, and group coaching registration
       <a href="/works/parabled" class="text-[#FF3C2A] text-xl font-semibold underline" style="font-family: 'Playfair Display', serif;">Show more</a>
     </div>
   </section>
+
+  <style>
+    /* Initial state: hidden with slight offset */
+    .reveal-section {
+      opacity: 0;
+      transform: translateY(50px); /* Slide up effect */
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+  
+    /* Active state: visible and in position */
+    .reveal-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+  
+  <script>
+    // Add this script to handle the scroll reveal
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".reveal-section");
+  
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // Stop observing once revealed
+            }
+          });
+        },
+        {
+          threshold: 0.1, // Trigger when 10% of the section is visible
+        }
+      );
+  
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+    });
+  </script>
