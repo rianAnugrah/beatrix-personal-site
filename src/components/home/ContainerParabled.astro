@@ -2,75 +2,38 @@
 import { Image } from "astro:assets";
 
 import scMobile from "../../assets/Container - Parabled-m.png"; // Make sure to add your image to this path
-import scDesktop from "../../assets/Container - Parabled.png"; // Make sure to add your image to this path
+import scDesktop from "../../assets/home/container-desktop-parabled.png"; // Make sure to add your image to this path
 import scTablet from "../../assets/Container - Parabled-t.png"; // Make sure to add your image to this path
 import Heading from "../Heading.astro";
 import Pile from "../Pile.astro";
 
 const title = "Parabled";
+const subtitle = `Web | UX Writing`
 const desc1  = `First version of Savicore`
-const desc2  = `Revamp the entire learning platform website to attract users and encourage them to register for our coaching plans.`
+const desc2  = `Revamped the entire esports platform website to attract users and encourage them to register for our coaching plans.`
 ---
 
-<section class="relative flex flex-col w-full lg:h-[30rem] lg:pt-5 group bg-[#c23a31] bg-opacity-[12%] overflow-hidden">
-
-  <Image
-    src={scDesktop}
-    alt="Savicore image-co"
-    class="hidden  w-auto mx-auto h-full relative   z-[1] "
-  />
-
-  <Image
-    src={scTablet}
-    alt="Savicore image-co"
-    class="hidden lg:block  mx-auto relative w-auto h-full z-[1]"
-  />
-  <div class="hidden lg:block  absolute w-[14rem] h-[14rem] bottom-[8rem] left-[calc(50%_-_18rem)] rounded-full z-[0] bg-[#5776F7]">
+<section class="w-full lg:w-[80rem] mb-[3rem] lg:mb-0 mx-auto lg:h-[30rem] flex flex-col lg:flex-row items-center px-0 lg:px-[7.5rem] ">
+  <div class="w-full lg:w-[35.5rem] h-[20rem] lg:h-[30rem]">
+    <Image
+      src={scDesktop}
+      alt="works-section"
+      class="w-full h-full object-contain"
+    />
   </div>
-
-  <Image
-    src={scMobile}
-    alt="Savicore image-co"
-    class="block lg:hidden w-full h-full"
-  />
-
-  <div
-    class="hidden absolute w-[24rem]  top-1/2 lg:left-[calc(50%_+_2rem)]    z-[2] -translate-y-1/2 lg:flex flex-col items-start justify-center gap-0 "
-  >
-    <div class="flex gap-4">
-      <Pile text="Web" />
-      <Pile text="UX Writing" />
-    </div>
+  </div>
+  <div class="flex p-[1.5rem] lg:px-[2.375rem] flex-col   justify-center">
     <h2
-      class={`text-left w-full text-[2rem]  font-bold leading-[2rem] mb-3 mt-6`}
-      style="font-family: 'Playfair Display', serif;"
-    >
-      {title}
+        class={`text-left w-full text-[2rem] xl:text-[3rem] font-bold leading-[3rem] mb-4`}
+        style="font-family: 'Playfair Display', serif;"
+            >
+                {title}
     </h2>
-    <p class="font-bold font-playfair text-[1.25rem] w-full pb-2 " style="font-family: 'Playfair Display', serif;">
-      {desc1}
-    </p>
-    <p class="italic w-full  ">
+    <p   class={`text-left w-full text-xl mb-4`}
+    style="font-family: 'Playfair Display', serif;">{subtitle}</p>
+    <p class="italic w-full text-xl mb-4">
       {desc2}
-    </p>
+  </p>
+    <a href="/works/parabled" class="text-[#FF3C2A] text-xl font-semibold underline" style="font-family: 'Playfair Display', serif;">Show more</a>
   </div>
-
-
-
 </section>
-<div
-    class="lg:hidden flex flex-col items-start p-[6%] gap-2 mb-[15%]"
->
-  <div class="flex gap-4 text-[#5B3EFF] font-playfair">
-    Web | UX Writing
-  </div>
-  <div class="text-left">
-    <Heading text={title} />
-  </div>
-  <p class="font-bold font-playfair text-[1.75rem] w-full text-xl text-left" style="font-family: 'Playfair Display', serif;">
-    {desc1}
-  </p>
-  <p class="italic w-full text-xl text-left">
-    {desc2}
-  </p>
-</div>

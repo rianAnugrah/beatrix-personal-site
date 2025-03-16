@@ -1,66 +1,74 @@
+---
+
+// No Astro frontmatter needed unless you're passing props
+---
 <section
-  class="flex items-center px-[1.5rem]  lg:px-20 py-0 flex-col z-[11] bg-white relative"
+  class="flex items-center px-[1.5rem] lg:px-20 py-4 flex-col z-[11]  relative"
 >
   <h1
-    class=" text-[2.5rem] lg:text-[5rem] leading-[5rem] w-full text-center max-w-[64rem] mx-auto mb-4"
+    class="text-[2.5rem] lg:text-[5rem] leading-[5rem] w-full text-center max-w-[64rem] mx-auto mb-8"
     style="font-family: 'Playfair Display', serif;"
   >
-    <!-- <span id="typewriter"></span><span class="text-[#5B3EFF] transition-all duration-700" id="name"></span><span id="exclamation"></span> -->
-    Hey, I'm <span id="typewriter"></span><span id="name" class="font-medium text-[#5B3EFF]"></span><span id="exclamation"></span>
-    <script>
-      const text = "";
-      const names = ["Beatrix", "Creator", "Writer"];
-      const exclamation = "";
-      let nameIndex = 0;
-      let i = 0, j = 0, k = 0;
-      let isTyping = false;
-
-      function typeWriter() {
-          const typewriterEl = document.getElementById("typewriter");
-          const nameEl = document.getElementById("name");
-          const exclamationEl = document.getElementById("exclamation");
-
-          if (i < text.length) {
-              typewriterEl.innerHTML += text.charAt(i);
-              i++;
-              setTimeout(typeWriter, 100);
-          } else if (j < names[nameIndex].length) {
-              nameEl.innerHTML += names[nameIndex].charAt(j);
-              j++;
-              nameEl.classList.add("pulse"); // Add pulse effect
-              setTimeout(typeWriter, 100);
-          } else if (k < exclamation.length) {
-              exclamationEl.innerHTML += exclamation.charAt(k);
-              k++;
-              isTyping = false;
-          }
-      }
-
-      function resetAndType() {
-          if (isTyping) return;
-
-          isTyping = true;
-          i = j = k = 0;
-
-          document.getElementById("typewriter").innerHTML = "";
-          document.getElementById("name").innerHTML = "";
-          document.getElementById("exclamation").innerHTML = "";
-
-          typeWriter();
-      }
-
-      window.onload = () => {
-          typeWriter();
-          setInterval(() => {
-              nameIndex = (nameIndex + 1) % names.length;
-              resetAndType();
-          }, 5000); // Change name every 10 seconds
-      };
-  </script>
+    Hey, I'm <span id="typewriter"></span><span id="name" class="font-medium text-[#FF3C2A]"></span><span id="exclamation"></span>
   </h1>
-  <p class="w-full text-center max-w-[45rem]  text-lg md:text-lg font-normal pb-16">
-    Content Designer @ <span class="font-semibold ">Alibaba</span> with 4+ years of experience in <span class="font-semibold ">UX Design/Writing</span>. 
+  <p class="w-full text-center max-w-[45rem] text-lg md:text-xl font-normal pb-12">
+    Content Designer @ <span class="font-semibold">Alibaba</span> with 4+ years of experience in <span class="font-semibold">UX Design/Writing</span>. 
     I turn complex ideas into clear, engaging content that connects with users and supports business goals. My mix of logic, 
     creativity, and empathy helps me create meaningful and user-friendly solutions.
   </p>
+
+  <script>
+    // Animation logic
+    const names = ["Beatrix", "Creator", "Writer"];
+    let nameIndex = 0;
+    let charIndex = 0;
+    let isTyping = false;
+
+    // Get DOM elements
+    const typewriterEl = document.getElementById("typewriter");
+    const nameEl = document.getElementById("name");
+    const exclamationEl = document.getElementById("exclamation");
+
+    // Typewriter function
+    function typeWriter() {
+      if (charIndex < names[nameIndex].length) {
+        nameEl.textContent += names[nameIndex][charIndex];
+        charIndex++;
+        setTimeout(typeWriter, 100); // 100ms delay between characters
+      } else {
+        isTyping = false; // Done typing this name
+      }
+    }
+
+    // Reset and start new animation
+    function resetAndType() {
+      if (isTyping) return; // Prevent overlap
+      isTyping = true;
+
+      // Clear previous content
+      typewriterEl.textContent = "";
+      nameEl.textContent = "";
+      exclamationEl.textContent = "";
+
+      // Move to next name and reset charIndex
+      nameIndex = (nameIndex + 1) % names.length;
+      charIndex = 0;
+
+      // Start typing
+      typeWriter();
+    }
+
+    // Start animation immediately and set interval
+    function startAnimation() {
+      if (!typewriterEl || !nameEl || !exclamationEl) {
+        console.error("DOM elements not found");
+        return;
+      }
+      typeWriter(); // Initial run
+      setInterval(resetAndType, 2000); // Switch every 5 seconds
+    }
+
+    // Run when DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", startAnimation);
+  </script>
 </section>
