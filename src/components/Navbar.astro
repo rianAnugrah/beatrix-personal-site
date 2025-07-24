@@ -15,18 +15,21 @@ import logoImage from "../assets/Logo.png"; // Make sure to add your image to th
                     class="hidden  lg:flex lg:space-x-8 items-center"
                     style="font-family: 'Playfair Display', serif;"
             >
-                <a
-                  href="/"
-                        class="scroll-to-section text-lg text-[#020202]  active:text-[#FF3C2A] hover:text-[#FF3C2A] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
-                data-target="works"
-                        >
-                    Work
-                </a>
-                <a
-                        href="/about"
-                        class="text-lg text-[#020202] active:text-[#FF3C2A] hover:text-[#FF3C2A] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
-                >
-                    About </a>
+            <a
+            href="/"
+            class="scroll-to-section text-lg text-[#020202] active:text-[#FF3C2A] hover:text-[#FF3C2A] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
+            data-target="works"
+          >
+            Work
+          </a>
+          <a
+            href="/about"
+            class="text-lg text-[#020202] active:text-[#FF3C2A] hover:text-[#FF3C2A] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"
+          >
+            About
+          </a>
+
+          
             <!--    <a-->
             <!--        href="#"-->
             <!--        class="text-lg text-[#020202] active:text-[#FF3C2A] transition-all ease-in-out duration-200 hover:scale-110 cursor-pointer"-->
@@ -183,66 +186,82 @@ import logoImage from "../assets/Logo.png"; // Make sure to add your image to th
     </div>
 </nav>
 
-
 <script>
-   document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll(".scroll-to-section");
-  const sectionButton = document.getElementById("sectionButton");
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll(".nav-link"); // Select all nav links
+    const sectionButton = document.getElementById("sectionButton");
 
-  const easeInOutQuad = (t) => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
+    const easeInOutQuad = (t) => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
 
-  const smoothScrollTo = (targetElement, duration) => {
-    const startPosition = window.scrollY;
-    const targetPosition = targetElement.getBoundingClientRect().top + startPosition;
-    const distance = targetPosition - startPosition;
-    let startTime = null;
+    const smoothScrollTo = (targetElement, duration) => {
+      const startPosition = window.scrollY;
+      const targetPosition = targetElement.getBoundingClientRect().top + startPosition;
+      const distance = targetPosition - startPosition;
+      let startTime = null;
 
-    const animation = (currentTime) => {
-      if (!startTime) startTime = currentTime;
-      const elapsedTime = currentTime - startTime;
-      const progress = Math.min(elapsedTime / duration, 1);
+      const animation = (currentTime) => {
+        if (!startTime) startTime = currentTime;
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
+        const easedProgress = easeInOutQuad(progress);
 
-      // Apply ease-in-out effect
-      const easedProgress = easeInOutQuad(progress);
+        window.scrollTo(0, startPosition + distance * easedProgress);
 
-      window.scrollTo(0, startPosition + distance * easedProgress);
+        if (progress < 1) {
+          requestAnimationFrame(animation);
+        }
+      };
 
-      if (progress < 1) {
-        requestAnimationFrame(animation);
-      }
+      requestAnimationFrame(animation);
     };
 
-    requestAnimationFrame(animation);
-  };
+    // Function to manage active link state
+    const setActiveLink = (clickedLink) => {
+      links.forEach((link) => {
+        link.classList.remove("is-active"); // Remove active class from all links
+      });
+      clickedLink.classList.add("is-active"); // Add active class to the clicked link
+    };
 
-  links.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const targetId = link.getAttribute("data-target");
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        // Call custom smooth scroll function with 1500ms duration
-        smoothScrollTo(targetElement, 1500);
+    links.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        // Prevent default only for scroll-to-section links
+        if (link.classList.contains("scroll-to-section")) {
+          e.preventDefault();
+          const targetId = link.getAttribute("data-target");
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            smoothScrollTo(targetElement, 1500);
+            if (sectionButton) {
+              sectionButton.textContent = link.textContent;
+            }
+          }
+        }
+        setActiveLink(link); // Set the clicked link as active
+      });
+    });
 
-        // Update the sectionButton text
-        sectionButton.textContent = link.textContent;
+    // Optional: Highlight the active link based on the current URL (for page loads)
+    const currentPath = window.location.pathname;
+    links.forEach((link) => {
+      if (link.getAttribute("href") === currentPath) {
+        setActiveLink(link);
       }
     });
   });
-});
 
-  
-  
-    window.onscroll = function() {
-      updateScrollProgress();
+  window.onscroll = function () {
+    updateScrollProgress();
   };
-  
+
   function updateScrollProgress() {
-      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPosition = window.scrollY;
-      const scrollPercentage = (scrollPosition / totalHeight) * 100;
-  
-      const progressBar = document.getElementById('progressBar');
-      progressBar.style.width = scrollPercentage + '%';
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPosition = window.scrollY;
+    const scrollPercentage = (scrollPosition / totalHeight) * 100;
+
+    const progressBar = document.getElementById("progressBar");
+    if (progressBar) {
+      progressBar.style.width = scrollPercentage + "%";
+    }
   }
-  </script>
+</script>
